@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.androidtech.around.Activities.ConversionActivity"
+    tools:showIn="@layout/activity_conversion">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- recycler view -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/message_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:layout_above="@+id/message_linear"
+                />
+
+            <LinearLayout
+                android:id="@+id/message_linear"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:maxHeight="104dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="#5c5c5c"
+                        android:textColorHint="#5c5c5c"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/message_edit"
+                        android:padding="5dp"
+                        android:hint="@string/write_message"
+                        android:layout_weight="4.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/message_send"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:background="@color/colorAccent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_send_white_24dp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+</FrameLayout>
+

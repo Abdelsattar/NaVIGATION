@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_marker_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.androidtech.around.Activities.MarkerDetailsActivity"
+    tools:showIn="@layout/activity_marker_details">
+
+
+    <android.support.v7.widget.GridLayout
+        android:visibility="visible"
+        android:id="@+id/edit_profile_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:columnCount="2"
+        app:rowCount="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--Business image-->
+        <ImageView
+            android:id="@+id/business_image"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:layout_gravity="fill_horizontal"
+            android:gravity="center_horizontal"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            />
+
+        <!--Change photo-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material">
+
+            <ImageView
+                android:id="@+id/driving"
+                android:src="@drawable/ic_directions_car_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"/>
+            <ImageView
+                android:id="@+id/walking"
+                android:src="@drawable/ic_directions_run_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"/>
+            <ImageView
+                android:src="@drawable/ic_directions_bike_black_24dp"
+                android:id="@+id/bicycling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <android.support.v4.widget.Space
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_height="@dimen/abc_list_item_padding_horizontal_material"
+            />
+
+        <!--business title-->
+        <TextView
+            android:id="@+id/business_title"
+            android:fontFamily="sans-serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/editProfile_text"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:drawablePadding="@dimen/activity_horizontal_margin"/>
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+        <!--user phone-->
+        <LinearLayout
+            android:id="@+id/phone_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:orientation="horizontal">
+            <!--phone number text-->
+            <TextView
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:id="@+id/business_phone"
+                android:fontFamily="sans-serif"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/editProfile_text"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+        <!--user phone-->
+        <LinearLayout
+            android:id="@+id/email_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:orientation="horizontal">
+            <!--email text-->
+            <TextView
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:id="@+id/business_email"
+                android:fontFamily="sans-serif"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/editProfile_text"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+
+        <!-- business district and city -->
+
+
+        <LinearLayout
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:textColor="@color/editProfile_text"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/district"/>
+
+            <!--business district-->
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/district"
+                app:layout_columnSpan="1"
+                app:layout_column="1" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+        <LinearLayout
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <TextView
+                android:textColor="@color/editProfile_text"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/city"/>
+
+            <!--business city-->
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/city"
+                app:layout_columnSpan="1"
+                app:layout_column="1" />
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+        <LinearLayout
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:textColor="@color/editProfile_text"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:textSize="16sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category"/>
+
+            <!--business category-->
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/category"
+                app:layout_columnSpan="1"
+                app:layout_column="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+
+        <LinearLayout
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <TextView
+                android:textColor="@color/editProfile_text"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_category"/>
+
+            <!--business sub-category -->
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subcategory"
+                app:layout_columnSpan="1"
+                app:layout_column="1" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+        <!--about me-->
+        <TextView
+            android:id="@+id/label_about_uts"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:fontFamily="sans-serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/editProfile_text"
+            app:layout_gravity="fill_horizontal"
+            android:text="@string/title_about_us"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:inputType="textCapSentences|textMultiLine"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:scrollHorizontally="false"/>
+
+        <View
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+        <TextView
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:id="@+id/business_about"
+            android:fontFamily="sans-serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/editProfile_text"
+            app:layout_gravity="fill_horizontal"
+            android:hint ="@string/about_me"
+            android:background="@android:color/transparent"
+            android:inputType="textCapSentences|textMultiLine"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:maxLines ="4"
+            android:maxLength ="300"
+            android:scrollHorizontally="false"/>
+
+    </android.support.v7.widget.GridLayout>
+
+</ScrollView>

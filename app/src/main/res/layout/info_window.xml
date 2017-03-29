@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/window_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_title"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Hospital de france"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+
+                android:gravity="center"
+                android:id="@+id/tv_category"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="hospital"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="5dp"
+        android:id="@+id/tv_description"
+        android:text="this place is awesome"
+        android:layout_width="250dp"
+        android:maxLines="3"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_in_talk_black_24dp"
+                android:layout_marginRight="@dimen/fab_margin"/>
+
+            <ImageView
+                android:id="@+id/iv_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chat_black_24dp"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/fab_margin"/>
+
+            <ImageView
+                android:id="@+id/iv_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions_black_24dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>

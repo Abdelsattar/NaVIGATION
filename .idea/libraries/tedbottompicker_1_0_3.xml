@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="tedbottompicker-1.0.3">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/gun0912.ted/tedbottompicker/1.0.3/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/gun0912.ted/tedbottompicker/1.0.3/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/gun0912.ted/tedbottompicker/1.0.3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gun0912.ted/tedbottompicker/1.0.3/1b5b946d48463b91d2c78c8614aad1bf47205950/tedbottompicker-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

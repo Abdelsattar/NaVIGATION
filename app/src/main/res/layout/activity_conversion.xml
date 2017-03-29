@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.androidtech.around.Activities.ConversionActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <ImageView
+                android:id="@+id/chat_user_image"
+                android:padding="@dimen/search_view_inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/profile_image"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/search_view_inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/user_name_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/user_name"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/user_online_linear"
+                        android:layout_below="@+id/user_name_toolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:id="@+id/user_image_online"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/offline_dotted"/>
+
+                        <TextView
+                            android:id="@+id/online_text"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/search_view_inset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/offline"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_conversion" />
+
+</android.support.design.widget.CoordinatorLayout>

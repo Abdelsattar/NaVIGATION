@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/fab_color_pressed</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomTheme" parent="MaterialDrawerTheme.TranslucentStatus">
+        <!-- ...and here we setting appcompat’s color theme attrs -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/fab_color_pressed</item>
+
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- MaterialDrawer specific values -->
+        <item name="material_drawer_background">@color/md_grey_850</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_text">@color/fab_color_pressed</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_dark_primary_text
+        </item>
+
+        <!-- CAB :D -->
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="MyTheme.Detail" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EditProfileActivity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/editProfilePrimary</item>
+        <item name="colorPrimaryDark">@color/editProfileDark</item>
+        <item name="colorAccent">@color/editProfileAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Fullscreen application theme. -->
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuButtonsStyle">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">@color/colorAccent</item>
+        <item name="fab_colorPressed">@color/colorPrimary</item>
+        <item name="fab_colorRipple">@color/colorPrimaryDark</item>
+    </style>
+
+
+</resources>

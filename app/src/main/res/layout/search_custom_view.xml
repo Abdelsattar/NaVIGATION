@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_width="0dp" />
+
+    <LinearLayout
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="2"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category"/>
+
+        <!--business category-->
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_spin"
+            app:layout_columnSpan="1"
+            app:layout_column="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_width="0dp" />
+
+    <LinearLayout
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_category"/>
+
+        <!--business sub-category -->
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subcategory_spin"
+            app:layout_columnSpan="1"
+            app:layout_column="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_width="0dp" />
+
+    <LinearLayout
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="2"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/district"/>
+
+        <!--business district-->
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/district_spin"
+            app:layout_columnSpan="1"
+            app:layout_column="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/city"/>
+
+        <!--business city-->
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_spin"
+            app:layout_columnSpan="1"
+            app:layout_column="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_width="0dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btn_search"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:padding="18sp"
+        android:text="@string/search"/>
+
+</LinearLayout>

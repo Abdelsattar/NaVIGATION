@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>about_phrase</key>
+        <value>Naviguer.dz est une application qui va vous permettre non seulement de localiser vos lieux utiles (ex : médecins/pharmaciens/cliniques/ /commerces/entreprises/agences/Taxi. etc.…), mais aussi de faire la promotion et la publicité de vos activités professionnelles.
+            Pour vous commentaires veuillez écrire à : affak.development@gmail.com</value>
+    </entry>
+
+    <entry>
+        <key>contact_mail</key>
+        <value>affak.development@gmail.com</value>
+    </entry>
+</defaultsMap>

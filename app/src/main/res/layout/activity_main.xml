@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.androidtech.around.Activities.MainActivity">
+
+    <!--map fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.androidtech.around.Activities.MainActivity" />
+
+    <!--login as business owner-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signup_view_inset"
+        android:layout_marginRight="@dimen/signup_view_inset"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/search_view_inset">
+
+        <RelativeLayout
+            android:id="@+id/sign_in_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+            <!--own business text -->
+            <TextView
+                android:id="@+id/own_business_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/signup_view_inset"
+                android:layout_marginRight="@dimen/signup_view_inset"
+                android:text="@string/own_business"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <!--sign up text act like button-->
+            <TextView
+                android:id="@+id/sign_in_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/own_business_text"
+                android:layout_toRightOf="@+id/own_business_text"
+                android:text="@string/sign_in"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_place_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <!--own business text -->
+            <TextView
+                android:id="@+id/add_business_warnning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/signup_view_inset"
+                android:layout_marginRight="@dimen/signup_view_inset"
+                android:text="@string/add_business_warnning"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <!--sign up text act like button-->
+            <TextView
+                android:id="@+id/add_business_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/add_business_warnning"
+                android:layout_toRightOf="@+id/add_business_warnning"
+                android:clickable="true"
+                android:text="@string/add_business"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--search view -->
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/adView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="4dp"
+        android:visibility="gone"
+        ads:adSize="280x50"
+        ads:adUnitId="@string/ad_mob_banner_id" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="36dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_mob_banner_id" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_colorNormal="@color/colorAccent"
+        fab:menu_colorPressed="@color/colorPrimary"
+        fab:menu_colorRipple="@color/colorPrimaryDark"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_shadowColor="#444">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            android:tint="@color/white"
+            fab:fab_label="@string/title_activity_add_business" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/my_location_fab"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="@string/location_current" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/filter"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flag_black_24dp"
+            android:tint="@color/white"
+            fab:fab_label="@string/filter" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/inbox"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_inbox_black_24dp"
+            android:tint="@color/white"
+            fab:fab_label="@string/inbox" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_close_search_on_keyboard_dismiss="false"
+        app:floatingSearch_dimBackground="false"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_leftActionMode="showHamburger"
+        app:floatingSearch_menu="@menu/menu_search_view"
+        app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"
+        app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"
+        app:floatingSearch_searchBarMarginTop="@dimen/search_view_inset"
+        app:floatingSearch_searchHint="@string/search_hint"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_suggestionsListAnimDuration="250" />
+
+
+</android.support.design.widget.CoordinatorLayout>

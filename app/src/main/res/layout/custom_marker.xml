@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout
+    android:layout_width="36dp"
+    android:layout_height="56dp"
+    android:background="@drawable/marker_icon"
+    >
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:id="@+id/custom_marker_image" />
+    </RelativeLayout>
+
+</FrameLayout>
