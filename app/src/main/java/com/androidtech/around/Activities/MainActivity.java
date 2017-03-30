@@ -34,7 +34,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.androidtech.around.Adapters.SpinnerAdapter;
 import com.androidtech.around.Models.BusinessPlace;
@@ -42,6 +41,7 @@ import com.androidtech.around.Models.Category;
 import com.androidtech.around.Models.City;
 import com.androidtech.around.Models.Districs;
 import com.androidtech.around.Models.GooglePlaces.PlacesRespose;
+import com.androidtech.around.Models.PlacesCategories;
 import com.androidtech.around.Models.Specialization;
 import com.androidtech.around.R;
 import com.androidtech.around.Service.ServiceBuilder;
@@ -62,7 +62,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.NativeExpressAdView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -82,6 +81,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
+import com.google.gson.Gson;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.mikepenz.materialdrawer.AccountHeader;
@@ -98,7 +98,6 @@ import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader;
 import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 import com.squareup.picasso.Picasso;
 
-import org.json.JSONObject;
 import org.parceler.Parcels;
 
 import java.util.ArrayList;
@@ -167,7 +166,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private AlertDialog mGpsDialog;
     private Location mCurrentLocation;
     private Drawer mLeftDrawer = null;
-    ;
     private AccountHeader mHeaderResult = null;
     private SharedPrefUtilities mSharedPrefUtilities;
     private List<BusinessPlace> myBusiness;
@@ -186,6 +184,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean mCategorySpinnerListener = true;
 
     private ArrayList<Category> mCategoryList;
+
+    private List<PlacesCategories> placesCategoriesList;
     private SpinnerAdapter mSpinnerAdapter;
 
 
@@ -207,13 +207,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private InterstitialAd mInterstitialAd;
     Handler mHandler = new Handler();
     int adsTimer = 15000;
+    boolean isGoogleCategory = false;
+    Bundle savedInstanceState;
     //endregion
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        this.savedInstanceState = savedInstanceState;
 
         mDistrictsList = new ArrayList<>();
         mCategoryList = new ArrayList<>();
@@ -259,6 +263,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (mCurrentUser != null)
             mCurrentUser.reload();
 
+        //user choose which category to use
+        Intent intent = this.getIntent();
+        if (intent != null && intent.hasExtra("Splash")) {
+            showChooseCategoryDilog();
+
+        }
+
+        initiateGooglePlacesList();
+
         //intiate firebase auth
         firebaseAuthIntalize();
 
@@ -292,9 +305,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mAddPlaceLayout.setVisibility(View.GONE);
         }
 
-        //add drawer
-        addDrawer(savedInstanceState);
-
         setupSearchView();
 
         mSearchView.setOnSearchListener(new FloatingSearchView.OnSearchListener() {
@@ -324,17 +334,65 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         connectUserOnline();
 
-        //open drawer
-        mLeftDrawer.openDrawer();
+        if (mLeftDrawer != null) {
+            //open drawer
+            mLeftDrawer.openDrawer();
+        }
 
         mAddPlaceText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                startActivity(new Intent(MainActivity.this,AddBusiness.class));
-                PerformGetPlaces();
+                PerformGetPlaces("restaurants");
             }
         });
         initAdMob();
+    }
+
+    public void showChooseCategoryDilog() {
+        new MaterialDialog.Builder(this)
+                .title("Choose Places")
+                .items(new String[]{"Google map places", "App Places"})
+                .itemsCallbackSingleChoice(-1, new MaterialDialog.ListCallbackSingleChoice() {
+                    @Override
+                    public boolean onSelection(MaterialDialog dialog, View view, int which, CharSequence text) {
+                        if (which == 0) {
+                            isGoogleCategory = true;
+                        } else {
+                            isGoogleCategory = false;
+                        }
+                        //add drawer
+                        addDrawer();
+
+                        mLeftDrawer.openDrawer();
+
+
+                        /**
+                         * If you use alwaysCallSingleChoiceCallback(), which is discussed below,
+                         * returning false here won't allow the newly selected radio button to actually be selected.
+                         **/
+                        return true;
+                    }
+                })
+                .positiveText("Choose")
+                .show();
+
+    }
+
+    private void initiateGooglePlacesList() {
+        placesCategoriesList = new ArrayList<>();
+        placesCategoriesList.add(0, new PlacesCategories("hospital", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
+        placesCategoriesList.add(1, new PlacesCategories("bank", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
+        placesCategoriesList.add(2, new PlacesCategories("airport", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
+        placesCategoriesList.add(3, new PlacesCategories("mosque", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(4, new PlacesCategories("cafe", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(5, new PlacesCategories("museum", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(6, new PlacesCategories("doctor", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(7, new PlacesCategories("restaurant", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(8, new PlacesCategories("dentist", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(9, new PlacesCategories("parking", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(10, new PlacesCategories("gas_station", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+
     }
 
     //region build google ads
@@ -491,10 +549,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     /**
      * add navigation drawer
-     *
-     * @param savedInstanceState
      */
-    private void addDrawer(Bundle savedInstanceState) {
+    private void addDrawer() {
 
         //initialize and create the image loader logic
         DrawerImageLoader.init(new AbstractDrawerImageLoader() {
@@ -510,7 +566,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         });
 
-        //check if current user is
+        //check if current user is exist
         if (mCurrentUser != null) {
             if (!mCurrentUser.isAnonymous()) {//user is signed in but before add place need to verify his email
                 // Create the AccountHeader
@@ -552,11 +608,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem.getIdentifier() == -3) {//log out
+                        Log.e("Drawer", drawerItem.getIdentifier() + "  pos " + position);
+
+                        if (position == 0 && drawerItem.getIdentifier() == 0) {
+                            showChooseCategoryDilog();
+                        } else if (drawerItem.getIdentifier() == -3) {//log out
                             logOut();
                         } else if (drawerItem.getIdentifier() == -2) {//about
                             goToAbout();
                         } else if (drawerItem.getIdentifier() > 199) {
+//                            Log.e("Drawer", "getIdentifier > 200");
                             //user place clicked
                             mMap.clear();
                             BusinessPlace businessPlace = mUserBusiness.get((int) drawerItem.getIdentifier() - 200);
@@ -565,59 +626,86 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             addMarker(businessPlace);
                             moveCameraToPosition(new LatLng(businessPlace.getLatitude(), businessPlace.getLongitude()));
                         } else {//navigate to place
-                            Category category = mCategoryList.get((int) drawerItem.getIdentifier());
-                            getCategories(category.getFr_name());
+
+                            if (isGoogleCategory) {
+                                PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier());
+                                PerformGetPlaces(category.getFr_name());
+
+                            } else {
+                                Category category = mCategoryList.get((int) drawerItem.getIdentifier());
+                                getCategories(category.getFr_name());
+                            }
                         }
                         return false;
                     }
                 })
                 .build();
-
+        CustomUrlPrimaryDrawerItem customUrlPrimaryDrawerItem2 =
+                new CustomUrlPrimaryDrawerItem().withIdentifier(counter)
+                        .withName(getResources().getString(R.string.choose_category))
+                        .withIcon(R.drawable.marker_icon);
+        mLeftDrawer.addItem(customUrlPrimaryDrawerItem2);
         mLeftDrawer.addItem(new SectionDrawerItem().withName(R.string.category));
 
         mCategoryList = new ArrayList<>();
-        //load data from firebase of category's
-        FirebaseUtil.getCategoryRef().addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                if (dataSnapshot != null) {
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        Category category = postSnapshot.getValue(Category.class); // get the category
-                        category.setFr_name(category.getFr_name());
-                        mCategoryList.add(category);
+        Log.e("isGoogleCategory", isGoogleCategory + "");
+        if (isGoogleCategory) {
 
-                        //add category as item in left drawer
-                        CustomUrlPrimaryDrawerItem customUrlPrimaryDrawerItem = new CustomUrlPrimaryDrawerItem().withIdentifier(counter).withName(category.getFr_name())
+            for (int i = 0; i < placesCategoriesList.size(); i++) {
+                PlacesCategories category = placesCategoriesList.get(i);
+
+                //add category as item in left drawer
+                CustomUrlPrimaryDrawerItem customUrlPrimaryDrawerItem =
+                        new CustomUrlPrimaryDrawerItem().withIdentifier(i)
+                                .withName(category.getFr_name())
                                 .withIcon(category.getIcon());
-                        mLeftDrawer.addItem(customUrlPrimaryDrawerItem);
+                mLeftDrawer.addItem(customUrlPrimaryDrawerItem);
+            }
+            addOfflineItems();
 
-                        if (counter == dataSnapshot.getChildrenCount() - 1) {
-                            //add user places
-                            if (FirebaseUtil.getCurrentUserId() != null) {
-                                loadUserData();
-                            } else {
-                                addOfflineItems();
+        } else {
+            //load data from firebase of category's
+            FirebaseUtil.getCategoryRef().addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    if (dataSnapshot != null) {
+                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                            Category category = postSnapshot.getValue(Category.class); // get the category
+                            category.setFr_name(category.getFr_name());
+                            mCategoryList.add(category);
+
+                            //add category as item in left drawer
+                            CustomUrlPrimaryDrawerItem customUrlPrimaryDrawerItem =
+                                    new CustomUrlPrimaryDrawerItem().withIdentifier(counter).withName(category.getFr_name())
+                                            .withIcon(category.getIcon());
+                            mLeftDrawer.addItem(customUrlPrimaryDrawerItem);
+
+                            if (counter == dataSnapshot.getChildrenCount() - 1) {
+                                //add user places
+                                if (FirebaseUtil.getCurrentUserId() != null) {
+                                    loadUserData();
+                                } else {
+                                    addOfflineItems();
+                                }
+
                             }
-
+                            counter = counter + 1;
                         }
-                        counter = counter + 1;
+
                     }
-
                 }
-            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                // Getting Post failed, log a message
-                Log.w(TAG, "loadCategories:onCancelled", databaseError.toException());
-                //don't show view and reload data
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    // Getting Post failed, log a message
+                    Log.w(TAG, "loadCategories:onCancelled", databaseError.toException());
+                    //don't show view and reload data
 
-                //add offline items
-                addOfflineItems();
-            }
-        });
-
-
+                    //add offline items
+                    addOfflineItems();
+                }
+            });
+        }
     }
 
     private void loadUserData() {
@@ -690,22 +778,89 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mMap.clear();
             //load user places
             myBusiness = new ArrayList<>();
-            FirebaseUtil.getBusinessRef().orderByChild(BusinessPlace.CATEGORY).equalTo(category).addListenerForSingleValueEvent(new ValueEventListener() {
+            FirebaseUtil.getBusinessRef().orderByChild(BusinessPlace.CATEGORY).equalTo(category)
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot buisnessdataSnapshot) {
+                            if (buisnessdataSnapshot.getChildrenCount() == 0) {
+                                if (mProgressDialog.isShowing())
+                                    mProgressDialog.dismiss();
+                                showSnackbar(R.string.no_places);
+                                return;
+                            }
+
+                            for (DataSnapshot placeSnapshot : buisnessdataSnapshot.getChildren()) {
+                                BusinessPlace place = placeSnapshot.getValue(BusinessPlace.class);
+                                myBusiness.add(place);
+                                String key = place.getLatitude() + "," + place.getLongitude();
+                                mBusinessPlaceList.put(key, place);
+                                addMarker(place);
+                            }
+
+                            //reset map camera
+                            resetMapCamera();
+                            if (mProgressDialog.isShowing())
+                                mProgressDialog.dismiss();
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            if (mProgressDialog.isShowing())
+                                mProgressDialog.dismiss();
+                            showSnackbar(R.string.error_occurred);
+                        }
+                    });
+
+        } else {
+            showSnackbar(R.string.map_not_ready);
+        }
+    }
+
+    //region places
+
+    public void addPlacesMarker(String icon, LatLng place) {
+
+        MarkerOptions markerOne = new MarkerOptions()
+                .position(place).title("");
+
+        target = new PicassoMarker(mMap.addMarker(markerOne), this);
+        Picasso.with(MainActivity.this).load(icon).into(target);
+    }
+
+    public void PerformGetPlaces(String categoryName) {
+        //"restaurants"
+        Log.e("Category_key", categoryName);
+
+        mProgressDialog.show();
+        ServiceBuilder builder = new ServiceBuilder();
+        ServiceInterfaces.Place place = builder.getPlaces();
+        if (mCurrentLocation != null) {
+            Call<PlacesRespose> apiModelCall = place.getPlaces(String.valueOf(mCurrentLocation.getLatitude()) + "," +
+                            String.valueOf(mCurrentLocation.getLongitude()), "500",
+                    categoryName, Constants.API_KEY);
+            apiModelCall.enqueue(new Callback<PlacesRespose>() {
                 @Override
-                public void onDataChange(DataSnapshot buisnessdataSnapshot) {
-                    if (buisnessdataSnapshot.getChildrenCount() == 0) {
+                public void onResponse(Call<PlacesRespose> call, Response<PlacesRespose> response) {
+                    if (response.body().getResults().size() == 0) {
                         if (mProgressDialog.isShowing())
                             mProgressDialog.dismiss();
                         showSnackbar(R.string.no_places);
                         return;
                     }
+                    Log.e("Response", new Gson().toJson(response.body()));
+                    for (int i = 0; i < response.body().getResults().size(); i++) {
 
-                    for (DataSnapshot placeSnapshot : buisnessdataSnapshot.getChildren()) {
-                        BusinessPlace place = placeSnapshot.getValue(BusinessPlace.class);
-                        myBusiness.add(place);
-                        String key = place.getLatitude() + "," + place.getLongitude();
-                        mBusinessPlaceList.put(key, place);
-                        addMarker(place);
+                        LatLng latLng = new LatLng(response.body().getResults().get(i).getGeometry().getLocation().getLat(),
+                                response.body().getResults().get(i).getGeometry().getLocation().getLng());
+                        addPlacesMarker(response.body().getResults().get(0).getIcon(), latLng);
+                        myLocationFabClicked();
+//                    Log.e("currentLocation name ", response.body().getResults().get(i).getName());
+//                    Log.e("currentLocation ratin ", String.valueOf(response.body().getResults().get(i).getRating()));
+                        if (response.body().getResults().get(i).getPhotos() != null && response.body().getResults().get(i).getPhotos().size() > 0) {
+                            for (int j = 0; j < response.body().getResults().get(i).getPhotos().size(); j++) {
+//                            Log.e("currentLocation photo ", response.body().getResults().get(i).getPhotos().get(j).getPhotoReference());
+                            }
+                        }
                     }
 
                     //reset map camera
@@ -715,17 +870,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
 
                 @Override
-                public void onCancelled(DatabaseError databaseError) {
+                public void onFailure(Call<PlacesRespose> call, Throwable t) {
                     if (mProgressDialog.isShowing())
                         mProgressDialog.dismiss();
                     showSnackbar(R.string.error_occurred);
                 }
             });
-
-        } else {
-            showSnackbar(R.string.map_not_ready);
         }
+
     }
+    //endregion
 
     private void addOfflineItems() {
         //add offline items
@@ -767,7 +921,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onBackPressed() {
-        PerformGetPlaces();
+        PerformGetPlaces("restaurants");
 
         /*
         //handle the back press :D close the drawer first and if the drawer is closed close the activity
@@ -1161,7 +1315,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Snackbar.make(mRootView, errorMessageRes, Snackbar.LENGTH_LONG).show();
     }
 
-
     private void populateBusinessPlaces() {
         mProgressDialog.show();
         mBusinessPlaceList = new HashMap<>();
@@ -1430,7 +1583,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     Category category = (Category) mBusinessCategorySpinner.getAdapter().getItem(i);
                     if (!category.getFr_name().isEmpty()) {
                         //intiate city spinner
-                        mSpecialitySpinAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item, getSpecializationItems(category.getFr_name()));
+                        mSpecialitySpinAdapter = new ArrayAdapter<String>(MainActivity.this,
+                                android.R.layout.simple_spinner_item,
+                                getSpecializationItems(category.getFr_name()));
                         mSpecialitySpinAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                         mBusinessSpecializationSpinner.setAdapter(mSpecialitySpinAdapter);
                     }
@@ -1611,7 +1766,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         return lst;
     }
 
-
     List<Specialization> getSubOfCategory(String categoryStr) {
         for (Category category : mCategoryList) {
             if (category.getFr_name().equals(categoryStr))
@@ -1628,47 +1782,4 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
 
-    //region places
-
-    public void addPlacesMarker(String icon, LatLng place) {
-
-        MarkerOptions markerOne = new MarkerOptions()
-                .position(place).title("");
-
-        target = new PicassoMarker(mMap.addMarker(markerOne), this);
-        Picasso.with(MainActivity.this).load(icon).into(target);
-    }
-
-
-    public void PerformGetPlaces(){
-        ServiceBuilder builder = new ServiceBuilder();
-        ServiceInterfaces.Place place = builder.getPlaces();
-        Call<PlacesRespose> apiModelCall = place.getPlaces(String.valueOf(mCurrentLocation.getLatitude())+","+
-                String.valueOf(mCurrentLocation.getLongitude()),"500","restaurants",Constants.API_KEY);
-        apiModelCall.enqueue(new Callback<PlacesRespose>() {
-            @Override
-            public void onResponse(Call<PlacesRespose> call, Response<PlacesRespose> response) {
-                for (int i=0 ; i<response.body().getResults().size(); i++){
-
-                    LatLng latLng = new LatLng(response.body().getResults().get(i).getGeometry().getLocation().getLat(),
-                            response.body().getResults().get(i).getGeometry().getLocation().getLng());
-                    addPlacesMarker(response.body().getResults().get(0).getIcon(),latLng);
-                    myLocationFabClicked();
-                    Log.e("currentLocation name ", response.body().getResults().get(i).getName());
-                    Log.e("currentLocation ratin ", String.valueOf(response.body().getResults().get(i).getRating()));
-                    if (response.body().getResults().get(i).getPhotos()!=null && response.body().getResults().get(i).getPhotos().size() > 0) {
-                        for (int j = 0; j < response.body().getResults().get(i).getPhotos().size(); j++) {
-                            Log.e("currentLocation photo ", response.body().getResults().get(i).getPhotos().get(j).getPhotoReference());
-                        }
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(Call<PlacesRespose> call, Throwable t) {
-
-            }
-        });
-    }
-    //endregion
 }
