@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="appintro-4.1.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.paolorotolo/appintro/4.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.paolorotolo/appintro/4.1.0/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/fb9cc13d0aa682409c94f138791c8a2061b3796e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/fb9cc13d0aa682409c94f138791c8a2061b3796e/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private List<BusinessPlace> mUserBusiness;
     private Map<String, Object> mBusinessPlaceList;
     private BusinessPlace mNewAddedBusiness;
-    int counter = 0;
+    int counter = 1;
     int userPlacesCounter = 200;
 
     private ArrayAdapter<String> mDistrictsSpinAdapter;
@@ -210,7 +210,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     boolean isGoogleCategory = false;
     Bundle savedInstanceState;
     //endregion
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -266,7 +265,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         //user choose which category to use
         Intent intent = this.getIntent();
         if (intent != null && intent.hasExtra("Splash")) {
-            showChooseCategoryDilog();
+            showChooseCategoryDilog(false);
 
         }
 
@@ -305,7 +304,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mAddPlaceLayout.setVisibility(View.GONE);
         }
 
-        setupSearchView();
+
+//        if (mLeftDrawer != null) {
+//            //open drawer
+//            mLeftDrawer.openDrawer();
+//        }
+//        setupSearchView();
 
         mSearchView.setOnSearchListener(new FloatingSearchView.OnSearchListener() {
             @Override
@@ -334,10 +338,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         connectUserOnline();
 
-        if (mLeftDrawer != null) {
-            //open drawer
-            mLeftDrawer.openDrawer();
-        }
 
         mAddPlaceText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -349,7 +349,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         initAdMob();
     }
 
-    public void showChooseCategoryDilog() {
+    public void showChooseCategoryDilog(boolean canceable) {
         new MaterialDialog.Builder(this)
                 .title("Choose Places")
                 .items(new String[]{"Google map places", "App Places"})
@@ -364,6 +364,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         //add drawer
                         addDrawer();
 
+                        setupSearchView();
                         mLeftDrawer.openDrawer();
 
 
@@ -611,7 +612,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         Log.e("Drawer", drawerItem.getIdentifier() + "  pos " + position);
 
                         if (position == 0 && drawerItem.getIdentifier() == 0) {
-                            showChooseCategoryDilog();
+                            showChooseCategoryDilog(true);
                         } else if (drawerItem.getIdentifier() == -3) {//log out
                             logOut();
                         } else if (drawerItem.getIdentifier() == -2) {//about
@@ -628,7 +629,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         } else {//navigate to place
 
                             if (isGoogleCategory) {
-                                PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier());
+                                PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier() - 50);
                                 PerformGetPlaces(category.getFr_name());
 
                             } else {
@@ -641,14 +642,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 })
                 .build();
         CustomUrlPrimaryDrawerItem customUrlPrimaryDrawerItem2 =
-                new CustomUrlPrimaryDrawerItem().withIdentifier(counter)
+                new CustomUrlPrimaryDrawerItem().withIdentifier(0)
                         .withName(getResources().getString(R.string.choose_category))
                         .withIcon(R.drawable.marker_icon);
         mLeftDrawer.addItem(customUrlPrimaryDrawerItem2);
         mLeftDrawer.addItem(new SectionDrawerItem().withName(R.string.category));
 
         mCategoryList = new ArrayList<>();
-        Log.e("isGoogleCategory", isGoogleCategory + "");
+//        Log.e("isGoogleCategory", isGoogleCategory + "");
         if (isGoogleCategory) {
 
             for (int i = 0; i < placesCategoriesList.size(); i++) {
@@ -656,7 +657,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 //add category as item in left drawer
                 CustomUrlPrimaryDrawerItem customUrlPrimaryDrawerItem =
-                        new CustomUrlPrimaryDrawerItem().withIdentifier(i)
+                        new CustomUrlPrimaryDrawerItem().withIdentifier(i + 50)
                                 .withName(category.getFr_name())
                                 .withIcon(category.getIcon());
                 mLeftDrawer.addItem(customUrlPrimaryDrawerItem);
@@ -664,6 +665,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             addOfflineItems();
 
         } else {
+            counter = 1;
             //load data from firebase of category's
             FirebaseUtil.getCategoryRef().addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
@@ -1780,6 +1782,5 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mCurrentUser.reload();
         super.onResume();
     }
-
 
 }

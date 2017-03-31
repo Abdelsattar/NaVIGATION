@@ -1,11 +1,8 @@
 <component name="libraryTable">
   <library name="floatingsearchview-2.0.3">
-    <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/2.0.3/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/2.0.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/2.0.3/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/4a0fb2d100537b28175295c9e6d4bead720f49ba/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/4a0fb2d100537b28175295c9e6d4bead720f49ba/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
