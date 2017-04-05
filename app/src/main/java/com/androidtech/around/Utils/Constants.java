@@ -7,8 +7,8 @@ package com.androidtech.around.Utils;
  */
 
 public class Constants {
-//    public static String API_KEY = "AIzaSyBoNomMFZovBlV8-V2LQgR7MyD4TNtFCJI";
-    public static String API_KEY = "AIzaSyDsTpyfanXyccQ2moH69b5JoiZSjCmS0C4";
+    public static String API_KEY = "AIzaSyBoNomMFZovBlV8-V2LQgR7MyD4TNtFCJI";
+    public static String SERVER_KEY = "AIzaSyAI3dk8msAL8Bi7xC47I3-uS69eI8ncfXo";
     public static String BASIC_URL = "https://maps.googleapis.com";
     public static final String ARG_USERS = "users";
     public static final String ARG_RECEIVER = "receiver";

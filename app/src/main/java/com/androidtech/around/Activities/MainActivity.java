@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.androidtech.around.Adapters.SpinnerAdapter;
 import com.androidtech.around.Models.BusinessPlace;
@@ -165,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private FirebaseAuth.AuthStateListener mAuthListener;
     private AlertDialog mGpsDialog;
     private Location mCurrentLocation;
+    private LocationManager mLocationManager;
     private Drawer mLeftDrawer = null;
     private AccountHeader mHeaderResult = null;
     private SharedPrefUtilities mSharedPrefUtilities;
@@ -205,8 +208,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             Manifest.permission.ACCESS_COARSE_LOCATION};
 
     private InterstitialAd mInterstitialAd;
+    private boolean mustShowAdd = false;
     Handler mHandler = new Handler();
-    int adsTimer = 15000;
+    int adsTimer = 40000;
     boolean isGoogleCategory = false;
     Bundle savedInstanceState;
     //endregion
@@ -221,6 +225,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mDistrictsList = new ArrayList<>();
         mCategoryList = new ArrayList<>();
         mBusinessPlaceList = new HashMap<>();
+        mustShowAdd = true;
 
         menuYellow.setOnMenuToggleListener(new FloatingActionMenu.OnMenuToggleListener() {
             @Override
@@ -228,13 +233,33 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 String text;
                 if (opened) {
                     if (mCurrentUser == null) {
-                        mAddFab.setVisibility(View.VISIBLE);
-                        mAddFab.setLabelText(getString(R.string.sign_in));
-                        inbox.setVisibility(View.GONE);
+                        if (isGoogleCategory) {
+                            mAddFab.setLabelText(getString(R.string.sign_in));
+                            mAddFab.setVisibility(View.GONE);
+                            filter.setVisibility(View.GONE);
+                            inbox.setVisibility(View.GONE);
+                            mAddPlaceLayout.setVisibility(View.GONE);
+                        } else {
+                            mAddFab.setVisibility(View.VISIBLE);
+                            mAddFab.setLabelText(getString(R.string.sign_in));
+                            inbox.setVisibility(View.GONE);
+                            filter.setVisibility(View.VISIBLE);
+                            mAddPlaceLayout.setVisibility(View.GONE);
+                        }
                     } else {
-                        mAddFab.setVisibility(View.VISIBLE);
-                        mAddFab.setLabelText(getString(R.string.title_activity_add_business));
-                        inbox.setVisibility(View.VISIBLE);
+                        if (isGoogleCategory) {
+                            mAddFab.setLabelText(getString(R.string.sign_in));
+                            mAddFab.setVisibility(View.GONE);
+                            filter.setVisibility(View.GONE);
+                            inbox.setVisibility(View.GONE);
+                            mAddPlaceLayout.setVisibility(View.GONE);
+                        } else {
+                            mAddFab.setVisibility(View.VISIBLE);
+                            mAddFab.setLabelText(getString(R.string.title_activity_add_business));
+                            inbox.setVisibility(View.VISIBLE);
+                            filter.setVisibility(View.VISIBLE);
+                            mAddPlaceLayout.setVisibility(View.VISIBLE);
+                        }
                     }
 
                 }
@@ -266,6 +291,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Intent intent = this.getIntent();
         if (intent != null && intent.hasExtra("Splash")) {
             showChooseCategoryDilog(false);
+
+        } else {
+            //add drawer
+            addDrawer();
+
+            setupSearchView();
+            mLeftDrawer.openDrawer();
 
         }
 
@@ -319,7 +351,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             @Override
             public void onSearchAction(String currentQuery) {
-                searchMapByTitle(currentQuery);
+                if (!isGoogleCategory) {
+                    searchMapByTitle(currentQuery);
+                }
             }
         });
 
@@ -342,8 +376,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mAddPlaceText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this,AddBusiness.class));
-                PerformGetPlaces("restaurants");
+                startActivity(new Intent(MainActivity.this, AddBusiness.class));
             }
         });
         initAdMob();
@@ -353,12 +386,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         new MaterialDialog.Builder(this)
                 .title("Choose Places")
                 .items(new String[]{"Google map places", "App Places"})
-                .itemsCallbackSingleChoice(-1, new MaterialDialog.ListCallbackSingleChoice() {
+                .cancelable(false)
+                .itemsCallbackSingleChoice(0, new MaterialDialog.ListCallbackSingleChoice() {
                     @Override
                     public boolean onSelection(MaterialDialog dialog, View view, int which, CharSequence text) {
                         if (which == 0) {
+                            mMap.clear();
                             isGoogleCategory = true;
                         } else {
+                            mMap.clear();
                             isGoogleCategory = false;
                         }
                         //add drawer
@@ -382,17 +418,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void initiateGooglePlacesList() {
         placesCategoriesList = new ArrayList<>();
-        placesCategoriesList.add(0, new PlacesCategories("hospital", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
-        placesCategoriesList.add(1, new PlacesCategories("bank", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
-        placesCategoriesList.add(2, new PlacesCategories("airport", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
-        placesCategoriesList.add(3, new PlacesCategories("mosque", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
-        placesCategoriesList.add(4, new PlacesCategories("cafe", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
-        placesCategoriesList.add(5, new PlacesCategories("museum", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
-        placesCategoriesList.add(6, new PlacesCategories("doctor", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
-        placesCategoriesList.add(7, new PlacesCategories("restaurant", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
-        placesCategoriesList.add(8, new PlacesCategories("dentist", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
-        placesCategoriesList.add(9, new PlacesCategories("parking", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
-        placesCategoriesList.add(10, new PlacesCategories("gas_station", "https://scontent.xx.fbcdn.net/v/t1.0-1/c66.70.205.256/p320x320/13620980_1037011936395834_8796044824356073335_n.jpg?oh=52a7a4ef8e989ac66db0bb99958bdf2d&oe=597113E6"));
+        placesCategoriesList.add(0, new PlacesCategories("hospital", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fhospital.png?alt=media&token=ab3c098f-3467-45ee-b761-1507c50440f3"));
+        placesCategoriesList.add(1, new PlacesCategories("bank", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fbank.png?alt=media&token=3d95cb80-0735-4f3d-b418-6f8ea6750e4f"));
+        placesCategoriesList.add(2, new PlacesCategories("airport", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
+        placesCategoriesList.add(3, new PlacesCategories("mosque", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
+        placesCategoriesList.add(4, new PlacesCategories("cafe", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fresturant.png?alt=media&token=8d64d944-b55f-4036-acd5-cf4bdefb5d78"));
+        placesCategoriesList.add(5, new PlacesCategories("museum", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
+        placesCategoriesList.add(6, new PlacesCategories("doctor", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fdoctor3.png?alt=media&token=dbdae35c-698b-465d-9d04-a7b20feb17c0"));
+        placesCategoriesList.add(7, new PlacesCategories("restaurant", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fresturant.png?alt=media&token=8d64d944-b55f-4036-acd5-cf4bdefb5d78"));
+        placesCategoriesList.add(8, new PlacesCategories("dentist", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fdoctor3.png?alt=media&token=dbdae35c-698b-465d-9d04-a7b20feb17c0"));
+        placesCategoriesList.add(9, new PlacesCategories("parking", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
+        placesCategoriesList.add(10, new PlacesCategories("gas_station", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
 
     }
 
@@ -435,9 +471,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
                                 if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-                                    mInterstitialAd.show();
+                                    if (mustShowAdd) {
+                                        mInterstitialAd.show();
+                                    }
                                 } else {
-                                    Toast.makeText(getBaseContext(), "Ad did not load", Toast.LENGTH_SHORT).show();
+                                    //Toast.makeText(getBaseContext(), "Ad did not load", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
@@ -611,7 +649,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         Log.e("Drawer", drawerItem.getIdentifier() + "  pos " + position);
 
-                        if (position == 0 && drawerItem.getIdentifier() == 0) {
+                        if (drawerItem.getIdentifier() == 0) {
                             showChooseCategoryDilog(true);
                         } else if (drawerItem.getIdentifier() == -3) {//log out
                             logOut();
@@ -629,11 +667,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         } else {//navigate to place
 
                             if (isGoogleCategory) {
-                                PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier() - 50);
-                                PerformGetPlaces(category.getFr_name());
+                                mMap.clear();
+                                if (position != 1) {
+                                    PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier() - 50);
+                                    PerformGetPlaces(category.getFr_name(), category.getIcon());
+                                }
 
                             } else {
-                                Category category = mCategoryList.get((int) drawerItem.getIdentifier());
+                                Category category = mCategoryList.get((int) drawerItem.getIdentifier() - 1);
                                 getCategories(category.getFr_name());
                             }
                         }
@@ -682,7 +723,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                             .withIcon(category.getIcon());
                             mLeftDrawer.addItem(customUrlPrimaryDrawerItem);
 
-                            if (counter == dataSnapshot.getChildrenCount() - 1) {
+                            if (counter == dataSnapshot.getChildrenCount()) {
                                 //add user places
                                 if (FirebaseUtil.getCurrentUserId() != null) {
                                     loadUserData();
@@ -829,7 +870,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Picasso.with(MainActivity.this).load(icon).into(target);
     }
 
-    public void PerformGetPlaces(String categoryName) {
+    public void PerformGetPlaces(String categoryName, final String Icon) {
         //"restaurants"
         Log.e("Category_key", categoryName);
 
@@ -838,11 +879,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         ServiceInterfaces.Place place = builder.getPlaces();
         if (mCurrentLocation != null) {
             Call<PlacesRespose> apiModelCall = place.getPlaces(String.valueOf(mCurrentLocation.getLatitude()) + "," +
-                            String.valueOf(mCurrentLocation.getLongitude()), "500",
+                            String.valueOf(mCurrentLocation.getLongitude()), "10000",
                     categoryName, Constants.API_KEY);
             apiModelCall.enqueue(new Callback<PlacesRespose>() {
                 @Override
                 public void onResponse(Call<PlacesRespose> call, Response<PlacesRespose> response) {
+                    int code = response.code();
                     if (response.body().getResults().size() == 0) {
                         if (mProgressDialog.isShowing())
                             mProgressDialog.dismiss();
@@ -854,7 +896,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                         LatLng latLng = new LatLng(response.body().getResults().get(i).getGeometry().getLocation().getLat(),
                                 response.body().getResults().get(i).getGeometry().getLocation().getLng());
-                        addPlacesMarker(response.body().getResults().get(0).getIcon(), latLng);
+                        addPlacesMarker(Icon, latLng);
                         myLocationFabClicked();
 //                    Log.e("currentLocation name ", response.body().getResults().get(i).getName());
 //                    Log.e("currentLocation ratin ", String.valueOf(response.body().getResults().get(i).getRating()));
@@ -866,7 +908,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     }
 
                     //reset map camera
-                    resetMapCamera();
+                    //resetMapCamera();
+                    if (mCurrentLocation != null) {
+                        LatLng mlatLng = new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude());
+                        moveCameraToMyPosition(mlatLng);
+                    }
                     if (mProgressDialog.isShowing())
                         mProgressDialog.dismiss();
                 }
@@ -922,10 +968,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     @Override
-    public void onBackPressed() {
-        PerformGetPlaces("restaurants");
+    protected void onPause() {
+        super.onPause();
+        mustShowAdd = false;
+    }
 
-        /*
+    @Override
+    public void onBackPressed() {
+
         //handle the back press :D close the drawer first and if the drawer is closed close the activity
         if (mLeftDrawer != null && mLeftDrawer.isDrawerOpen()) {
             mLeftDrawer.closeDrawer();
@@ -943,7 +993,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         }
                     })
                     .show();
-        }*/
+        }
     }
 
     private void logOut() {
@@ -1148,6 +1198,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     /**
+     * move map camera to My position
+     *
+     * @param latLng
+     */
+    private void moveCameraToMyPosition(LatLng latLng) {
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(latLng)      // Sets the center of the map to Mountain View
+                .zoom(14)                   // Sets the zoom
+                .bearing(90)                // Sets the orientation of the camera to east
+                .tilt(30)                   // Sets the tilt of the camera to 30 degrees
+                .build();                   // Creates a CameraPosition from the builder
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+    }
+
+    /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
      * This is where we can add markers or lines, add listeners or move the camera. In this case,
@@ -1203,9 +1268,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_my_location)
                             .color(getResources().getColor(R.color.white)).sizeDp(24));
                 } else {
-                    mCurrentLocation = null;
-                    mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_gps_off)
-                            .color(Color.WHITE).sizeDp(24));
+                    mCurrentLocation = getLastKnownLocation();
                 }
 
             }
@@ -1259,6 +1322,32 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 return v;
             }
         });
+    }
+
+    private Location getLastKnownLocation() {
+        List<String> providers = mLocationManager.getProviders(true);
+        Location bestLocation = null;
+        for (String provider : providers) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                Location l = mLocationManager.getLastKnownLocation(provider);
+                //Log.d("last known location, provider: %s, location: %s", provider, l);
+
+                if (l == null) {
+                    continue;
+                }
+                if (bestLocation == null
+                        || l.getAccuracy() < bestLocation.getAccuracy()) {
+                    //Log.d("found best last known location: %s", l);
+                    bestLocation = l;
+                }
+            }
+        }
+        if (bestLocation == null) {
+            mCurrentLocation = null;
+            mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_gps_off)
+                    .color(Color.WHITE).sizeDp(24));
+        }
+        return bestLocation;
     }
 
     /**
@@ -1778,8 +1867,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     protected void onResume() {
-        if (mCurrentUser != null)
+        if (mCurrentUser != null) {
             mCurrentUser.reload();
+        }
+        mustShowAdd = true;
         super.onResume();
     }
 

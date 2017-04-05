@@ -72,9 +72,9 @@ dependencies {
     //intro slides
     compile 'com.github.paolorotolo:appintro:4.1.0'
     //pick image
-    compile 'gun0912.ted:tedbottompicker:1.0.3'
+    compile 'gun0912.ted:tedbottompicker:1.0.10'
     //premission
-    compile 'gun0912.ted:tedpermission:1.0.2'
+    compile 'gun0912.ted:tedpermission:1.0.3'
     // okhttp
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     //retrofit
