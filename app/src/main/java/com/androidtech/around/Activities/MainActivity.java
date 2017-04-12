@@ -18,6 +18,7 @@ import android.provider.Settings;
 import android.support.annotation.MainThread;
 import android.support.annotation.NonNull;
 import android.support.annotation.StringRes;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
@@ -33,7 +34,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -143,6 +143,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     TextView mAddPlaceText;
     @BindView(R.id.floating_search_view)
     FloatingSearchView mSearchView;
+    @BindView(R.id.places_fab)
+    FloatingActionButton placesSwitch;
     //    @BindView(R.id.dummy)
 //    View mDummyView;
     @BindView(R.id.menu_yellow)
@@ -359,6 +361,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         //checkGps
         checkGps();
+//        checkGAPSForHighVersions();
 
         //change fab icon
         mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_gps_off)
@@ -380,6 +383,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
         initAdMob();
+
+        placesSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showChooseCategoryDilog(false);
+            }
+        });
+    }
+
+    private void checkGAPSForHighVersions() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+        }
+
     }
 
     public void showChooseCategoryDilog(boolean canceable) {

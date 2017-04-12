@@ -96,6 +96,15 @@
 
     </RelativeLayout>
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/places_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
     <!--search view -->
 
     <com.google.android.gms.ads.NativeExpressAdView
@@ -115,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start|bottom"
         android:layout_marginBottom="12dp"
-        android:layout_marginRight="36dp"
+        android:layout_marginRight="30dp"
         ads:adSize="BANNER"
         ads:adUnitId="@string/ad_mob_banner_id" />
 
@@ -126,7 +135,7 @@
         android:layout_gravity="end|bottom"
         android:layout_marginBottom="40dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         fab:menu_animationDelayPerItem="0"
         fab:menu_colorNormal="@color/colorAccent"

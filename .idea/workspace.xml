@@ -11,94 +11,49 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Category_key" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b3bc013-b554-4f2b-9d88-bd39a7071341" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/tedbottompicker_1_0_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/tedpermission_1_0_3.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/tedbottompicker_1_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/tedpermission_1_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Around github.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-31-14-57-07-626.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-31-15-02-45-017.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-31-15-10-37-484.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-31-15-13-29-794.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-31-15-14-20-136.rawproto" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NaVIGATION.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_about_page_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_about_page_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appintro_4_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appintro_4_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/butterknife_8_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/butterknife_8_4_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_25_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/core_0_9_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/core_0_9_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/fab_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/fab_1_6_4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/fastadapter_2_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/fastadapter_2_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_ads_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_ads_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_impl_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_impl_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_auth_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_auth_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_common_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_common_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_config_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_config_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_core_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_core_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_crash_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_crash_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_database_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_database_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_database_connection_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_database_connection_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_iid_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_iid_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_messaging_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_messaging_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_storage_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_storage_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_storage_common_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_storage_common_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/floatingsearchview_2_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/floatingsearchview_2_0_3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/google_material_typeface_2_2_0_3_original.xml" afterPath="$PROJECT_DIR$/.idea/libraries/google_material_typeface_2_2_0_3_original.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gridlayout_v7_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gridlayout_v7_25_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/iconics_core_2_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/iconics_core_2_8_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/library_1_1_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/library_1_1_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/library_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/library_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/materialdrawer_5_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/materialdrawer_5_8_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/materialish_progress_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/materialish_progress_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/materialize_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/materialize_1_0_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_ads_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_ads_lite_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_lite_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_basement_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_basement_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_clearcut_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_clearcut_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_gass_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gass_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_location_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_location_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_maps_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_places_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_places_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_10_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/tedpermission_1_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/tedpermission_1_0_3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/transition_25_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/transition_25_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/viewpropertyobjectanimator_1_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/viewpropertyobjectanimator_1_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
@@ -131,7 +86,72 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state />
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="NaVIGATION" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="NaVIGATION" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="NaVIGATION" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="NaVIGATION" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="NaVIGATION" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="NaVIGATION" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="NaVIGATION" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="android" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
         </projects_view>
       </state>
     </system>
@@ -144,81 +164,70 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="1332" column="88" selection-start-line="1332" selection-start-column="88" selection-end-line="1332" selection-end-column="88" />
+            <state relative-caret-position="119">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5281#5303#0" expanded="false" />
                 <element signature="docComment;field#REQUEST_LOCATION#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;field#PERMISSIONS_LOCATION#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#8987#10892#0" expanded="true" />
-                <element signature="e#10891#10892#0" expanded="true" />
-                <element signature="e#13127#13150#0" expanded="false" />
-                <element signature="e#13455#13491#0" expanded="false" />
-                <element signature="class#13646:14023" expanded="false" />
-                <element signature="method#onSuggestionClicked#0;class#13646:14023" expanded="false" />
-                <element signature="method#onSearchAction#0;class#13646:14023" expanded="false" />
-                <element signature="e#14974#15975#0" expanded="true" />
-                <element signature="e#15974#15975#0" expanded="true" />
-                <element signature="e#19305#19446#0" expanded="true" />
-                <element signature="e#19445#19446#0" expanded="true" />
+                <element signature="e#9087#10992#0" expanded="true" />
+                <element signature="e#10991#10992#0" expanded="true" />
+                <element signature="e#13227#13250#0" expanded="false" />
+                <element signature="e#13555#13591#0" expanded="false" />
+                <element signature="class#13746:14123" expanded="false" />
+                <element signature="method#onSuggestionClicked#0;class#13746:14123" expanded="false" />
+                <element signature="method#onSearchAction#0;class#13746:14123" expanded="false" />
+                <element signature="e#14851#15015#0" expanded="true" />
+                <element signature="e#15014#15015#0" expanded="true" />
+                <element signature="e#15579#16580#0" expanded="true" />
+                <element signature="e#16579#16580#0" expanded="true" />
+                <element signature="e#19910#20051#0" expanded="true" />
+                <element signature="e#20050#20051#0" expanded="true" />
                 <element signature="method#connectUserOnline#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#getFcmToken#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#getFcmToken#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#21967#22574#0" expanded="true" />
-                <element signature="e#22573#22574#0" expanded="true" />
+                <element signature="e#22572#23179#0" expanded="true" />
+                <element signature="e#23178#23179#0" expanded="true" />
                 <element signature="method#showFilterDialog#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#setupSearchView#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#setupSearchView#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addDrawer#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#24719:25190" expanded="false" />
-                <element signature="method#set#0;class#24719:25190" expanded="false" />
-                <element signature="method#cancel#0;class#24719:25190" expanded="false" />
-                <element signature="e#25317#25382#0" expanded="false" />
-                <element signature="e#26414#26754#0" expanded="true" />
-                <element signature="e#26753#26754#0" expanded="true" />
-                <element signature="e#27284#29421#0" expanded="true" />
-                <element signature="e#27975#28044#0" expanded="false" />
-                <element signature="e#29420#29421#0" expanded="true" />
-                <element signature="method#onCancelled#0;class#30761:32630" expanded="false" />
-                <element signature="e#32485#32518#0" expanded="false" />
+                <element signature="class#25324:25795" expanded="false" />
+                <element signature="method#set#0;class#25324:25795" expanded="false" />
+                <element signature="method#cancel#0;class#25324:25795" expanded="false" />
+                <element signature="e#25922#25987#0" expanded="false" />
+                <element signature="e#27019#27359#0" expanded="true" />
+                <element signature="e#27358#27359#0" expanded="true" />
+                <element signature="e#27889#30026#0" expanded="true" />
+                <element signature="e#28580#28649#0" expanded="false" />
+                <element signature="e#30025#30026#0" expanded="true" />
+                <element signature="method#onCancelled#0;class#31366:33235" expanded="false" />
+                <element signature="e#33090#33123#0" expanded="false" />
                 <element signature="method#loadUserData#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#32891:35410" expanded="false" />
-                <element signature="method#onDataChange#0;class#32891:35410" expanded="false" />
-                <element signature="class#33348:35077" expanded="false" />
-                <element signature="method#onDataChange#0;class#33348:35077" expanded="false" />
-                <element signature="method#onCancelled#0;class#33348:35077" expanded="false" />
-                <element signature="method#onCancelled#0;class#32891:35410" expanded="false" />
-                <element signature="e#35327#35346#0" expanded="false" />
+                <element signature="class#33496:36015" expanded="false" />
+                <element signature="method#onDataChange#0;class#33496:36015" expanded="false" />
+                <element signature="class#33953:35682" expanded="false" />
+                <element signature="method#onDataChange#0;class#33953:35682" expanded="false" />
+                <element signature="method#onCancelled#0;class#33953:35682" expanded="false" />
+                <element signature="method#onCancelled#0;class#33496:36015" expanded="false" />
+                <element signature="e#35932#35951#0" expanded="false" />
                 <element signature="docComment;method#getCategories#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getCategories#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#35904:37477" expanded="false" />
-                <element signature="method#onDataChange#0;class#35904:37477" expanded="false" />
-                <element signature="method#onCancelled#0;class#35904:37477" expanded="false" />
-                <element signature="e#39506#39606#0" expanded="false" />
-                <element signature="method#addOfflineItems#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#41119#41211#0" expanded="false" />
+                <element signature="e#40111#40211#0" expanded="false" />
+                <element signature="e#41724#41816#0" expanded="false" />
                 <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#43189#43459#0" expanded="true" />
-                <element signature="e#43458#43459#0" expanded="true" />
+                <element signature="e#43794#44064#0" expanded="true" />
+                <element signature="e#44063#44064#0" expanded="true" />
                 <element signature="method#logOut#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#fabClicked#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#fabClicked#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#checkGps#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#checkGps#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#requestLocationPermission#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#requestLocationPermission#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#46889#46969#0" expanded="false" />
                 <element signature="docComment;method#firebaseAuthIntalize#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#firebaseAuthIntalize#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#48343#48915#0" expanded="true" />
-                <element signature="e#48914#48915#0" expanded="true" />
+                <element signature="e#48948#49520#0" expanded="true" />
+                <element signature="e#49519#49520#0" expanded="true" />
                 <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#onStop#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#customDialog#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#myLocationFabClicked#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#49631#49713#0" expanded="false" />
+                <element signature="e#50236#50318#0" expanded="false" />
                 <element signature="method#inbox#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#moveCameraToPosition#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#moveCameraToPosition#0;class#MainActivity#0" expanded="false" />
@@ -227,60 +236,58 @@
                 <element signature="docComment;method#moveCameraToMyPosition#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#moveCameraToMyPosition#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#onMapReady#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#53090#53117#0" expanded="false" />
-                <element signature="e#53551#53608#0" expanded="false" />
-                <element signature="e#54365#54969#0" expanded="true" />
-                <element signature="e#54968#54969#0" expanded="true" />
-                <element signature="e#55015#55725#0" expanded="true" />
-                <element signature="e#55525#55602#0" expanded="false" />
-                <element signature="e#55724#55725#0" expanded="true" />
-                <element signature="class#55767:57473" expanded="false" />
-                <element signature="method#getInfoContents#0;class#55767:57473" expanded="false" />
+                <element signature="e#53695#53722#0" expanded="false" />
+                <element signature="e#54156#54213#0" expanded="false" />
+                <element signature="e#54970#55574#0" expanded="true" />
+                <element signature="e#55573#55574#0" expanded="true" />
+                <element signature="e#55620#56330#0" expanded="true" />
+                <element signature="e#56130#56207#0" expanded="false" />
+                <element signature="e#56329#56330#0" expanded="true" />
+                <element signature="class#56372:58078" expanded="false" />
+                <element signature="method#getInfoContents#0;class#56372:58078" expanded="false" />
                 <element signature="docComment;method#intentToEditProfile#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#intentToEditProfile#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#59420#59501#0" expanded="false" />
+                <element signature="e#60025#60106#0" expanded="false" />
                 <element signature="docComment;method#setMyLocationOnMap#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#showSnackbar#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#populateBusinessPlaces#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#61440:62127" expanded="false" />
-                <element signature="method#onDataChange#0;class#61440:62127" expanded="false" />
+                <element signature="class#62045:62732" expanded="false" />
+                <element signature="method#onDataChange#0;class#62045:62732" expanded="false" />
                 <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#getAboutFromRemoteConfig#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#62541#62571#0" expanded="false" />
-                <element signature="e#62721#62756#0" expanded="false" />
-                <element signature="e#63366#63390#0" expanded="false" />
-                <element signature="e#64181#64272#0" expanded="false" />
-                <element signature="e#64440#64477#0" expanded="false" />
-                <element signature="e#64964#65448#0" expanded="true" />
-                <element signature="e#65177#65261#0" expanded="false" />
-                <element signature="e#65447#65448#0" expanded="true" />
+                <element signature="e#63146#63176#0" expanded="false" />
+                <element signature="e#63326#63361#0" expanded="false" />
+                <element signature="e#63971#63995#0" expanded="false" />
+                <element signature="e#64786#64877#0" expanded="false" />
+                <element signature="e#65045#65082#0" expanded="false" />
+                <element signature="e#65569#66053#0" expanded="true" />
+                <element signature="e#65782#65866#0" expanded="false" />
+                <element signature="e#66052#66053#0" expanded="true" />
                 <element signature="method#filterMap#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#65793:69111" expanded="false" />
-                <element signature="method#onDataChange#0;class#65793:69111" expanded="false" />
-                <element signature="method#onCancelled#0;class#65793:69111" expanded="false" />
+                <element signature="class#66398:69716" expanded="false" />
+                <element signature="method#onDataChange#0;class#66398:69716" expanded="false" />
+                <element signature="method#onCancelled#0;class#66398:69716" expanded="false" />
                 <element signature="method#searchMapByTitle#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#69260:70639" expanded="false" />
-                <element signature="method#onDataChange#0;class#69260:70639" expanded="false" />
-                <element signature="method#onCancelled#0;class#69260:70639" expanded="false" />
+                <element signature="class#69865:71244" expanded="false" />
+                <element signature="method#onDataChange#0;class#69865:71244" expanded="false" />
+                <element signature="method#onCancelled#0;class#69865:71244" expanded="false" />
                 <element signature="docComment;method#setupDistrictSpinner#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#setupDistrictSpinner#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#71357:72250" expanded="false" />
-                <element signature="method#onItemSelected#0;class#71357:72250" expanded="false" />
-                <element signature="method#onNothingSelected#0;class#71357:72250" expanded="false" />
+                <element signature="class#71962:72855" expanded="false" />
+                <element signature="method#onItemSelected#0;class#71962:72855" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#71962:72855" expanded="false" />
                 <element signature="method#setupCategorySpinner#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#73046:74083" expanded="false" />
-                <element signature="method#onItemSelected#0;class#73046:74083" expanded="false" />
-                <element signature="method#onNothingSelected#0;class#73046:74083" expanded="false" />
+                <element signature="class#73651:74688" expanded="false" />
+                <element signature="method#onItemSelected#0;class#73651:74688" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#73651:74688" expanded="false" />
                 <element signature="docComment;method#updateUI#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#updateUI#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#74695:75887" expanded="false" />
-                <element signature="method#onDataChange#0;class#74695:75887" expanded="false" />
-                <element signature="method#onCancelled#0;class#74695:75887" expanded="false" />
-                <element signature="class#76012:77156" expanded="false" />
-                <element signature="method#onDataChange#0;class#76012:77156" expanded="false" />
-                <element signature="method#onCancelled#0;class#76012:77156" expanded="false" />
+                <element signature="class#75300:76492" expanded="false" />
+                <element signature="method#onDataChange#0;class#75300:76492" expanded="false" />
+                <element signature="method#onCancelled#0;class#75300:76492" expanded="false" />
+                <element signature="class#76617:77761" expanded="false" />
+                <element signature="method#onDataChange#0;class#76617:77761" expanded="false" />
+                <element signature="method#onCancelled#0;class#76617:77761" expanded="false" />
                 <element signature="method#getDistrictsItems#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#getCityItems#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#getCitiesOfDistrict#0;class#MainActivity#0" expanded="false" />
@@ -292,87 +299,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_maps_api.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="google-services.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/google-services.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="112" column="89" selection-start-line="112" selection-start-column="89" selection-end-line="112" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
+            <state relative-caret-position="1683">
+              <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditProfile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/EditProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+            <state relative-caret-position="1292">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -2241,6 +2195,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="D:\Android\Apps\NaVIGATION" value="4474182340360" />
         <entry key="E:\FCI\Android\Apps\NaVIGATION" value="4472912096048" />
         <entry key="E:\FCI\Android\Apps\around" value="4460164760348" />
         <entry key="F:\Work\around\Around github" value="4472893912709" />
@@ -2650,9 +2605,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Models/PlacesCategories.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Constants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/MainActivity.java" />
       </list>
     </option>
@@ -2660,8 +2616,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2674,7 +2630,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -2688,11 +2644,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -2701,10 +2656,42 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NaVIGATION" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NaVIGATION" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -2713,7 +2700,7 @@
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../prog/sdk" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="ZX1G4288DS" />
+    <property name="device.picker.selection" value="cb5be49a" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Floating&#9;FILE&#9;file://E:/FCI/Android/Apps/around/.idea/libraries/floatingsearchview_2_0_3.xml" />
     <property name="ExportApk.ApkPath" value="E:\FCI\Android\Apps\around\app" />
@@ -3126,7 +3113,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3137,8 +3124,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5802048" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.579977" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -3146,8 +3133,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18643032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3160,7 +3147,7 @@
       <window_info id="Assistant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753405" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32701713" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3175,18 +3162,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add places switch fab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add places switch fab" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/MainActivity.java</url>
-          <line>886</line>
+          <line>903</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/MainActivity.java</url>
-          <line>922</line>
+          <line>939</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -3196,21 +3187,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../prog/sdk/sources/android-25/android/provider/Settings.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="96" column="53" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/PermissionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../prog/sdk/platforms/android-25/data/res/layout/simple_spinner_dropdown_item.xml" />
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/androidtech/around/R.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/DocumentHelper.java">
@@ -3409,19 +3385,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_custom_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -3433,23 +3402,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_edit_profile.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_edit_profile.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3435">
           <caret line="236" column="49" selection-start-line="236" selection-start-column="49" selection-end-line="236" selection-end-column="49" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml">
@@ -3466,37 +3435,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/EditProfile.java">
+    <entry file="file://$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/google-services.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="89" selection-start-line="112" selection-start-column="89" selection-end-line="112" selection-end-column="89" />
+        <state relative-caret-position="340">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -3509,110 +3468,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        <state relative-caret-position="1904">
+          <caret line="112" column="89" selection-start-line="112" selection-start-column="89" selection-end-line="112" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/EditProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/PermissionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/google-services.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="1683">
+          <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/androidtech/around/Activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="1332" column="88" selection-start-line="1332" selection-start-column="88" selection-end-line="1332" selection-end-column="88" />
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5281#5303#0" expanded="false" />
             <element signature="docComment;field#REQUEST_LOCATION#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;field#PERMISSIONS_LOCATION#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#8987#10892#0" expanded="true" />
-            <element signature="e#10891#10892#0" expanded="true" />
-            <element signature="e#13127#13150#0" expanded="false" />
-            <element signature="e#13455#13491#0" expanded="false" />
-            <element signature="class#13646:14023" expanded="false" />
-            <element signature="method#onSuggestionClicked#0;class#13646:14023" expanded="false" />
-            <element signature="method#onSearchAction#0;class#13646:14023" expanded="false" />
-            <element signature="e#14974#15975#0" expanded="true" />
-            <element signature="e#15974#15975#0" expanded="true" />
-            <element signature="e#19305#19446#0" expanded="true" />
-            <element signature="e#19445#19446#0" expanded="true" />
+            <element signature="e#9087#10992#0" expanded="true" />
+            <element signature="e#10991#10992#0" expanded="true" />
+            <element signature="e#13227#13250#0" expanded="false" />
+            <element signature="e#13555#13591#0" expanded="false" />
+            <element signature="class#13746:14123" expanded="false" />
+            <element signature="method#onSuggestionClicked#0;class#13746:14123" expanded="false" />
+            <element signature="method#onSearchAction#0;class#13746:14123" expanded="false" />
+            <element signature="e#14851#15015#0" expanded="true" />
+            <element signature="e#15014#15015#0" expanded="true" />
+            <element signature="e#15579#16580#0" expanded="true" />
+            <element signature="e#16579#16580#0" expanded="true" />
+            <element signature="e#19910#20051#0" expanded="true" />
+            <element signature="e#20050#20051#0" expanded="true" />
             <element signature="method#connectUserOnline#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#getFcmToken#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getFcmToken#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#21967#22574#0" expanded="true" />
-            <element signature="e#22573#22574#0" expanded="true" />
+            <element signature="e#22572#23179#0" expanded="true" />
+            <element signature="e#23178#23179#0" expanded="true" />
             <element signature="method#showFilterDialog#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setupSearchView#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setupSearchView#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addDrawer#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#24719:25190" expanded="false" />
-            <element signature="method#set#0;class#24719:25190" expanded="false" />
-            <element signature="method#cancel#0;class#24719:25190" expanded="false" />
-            <element signature="e#25317#25382#0" expanded="false" />
-            <element signature="e#26414#26754#0" expanded="true" />
-            <element signature="e#26753#26754#0" expanded="true" />
-            <element signature="e#27284#29421#0" expanded="true" />
-            <element signature="e#27975#28044#0" expanded="false" />
-            <element signature="e#29420#29421#0" expanded="true" />
-            <element signature="method#onCancelled#0;class#30761:32630" expanded="false" />
-            <element signature="e#32485#32518#0" expanded="false" />
+            <element signature="class#25324:25795" expanded="false" />
+            <element signature="method#set#0;class#25324:25795" expanded="false" />
+            <element signature="method#cancel#0;class#25324:25795" expanded="false" />
+            <element signature="e#25922#25987#0" expanded="false" />
+            <element signature="e#27019#27359#0" expanded="true" />
+            <element signature="e#27358#27359#0" expanded="true" />
+            <element signature="e#27889#30026#0" expanded="true" />
+            <element signature="e#28580#28649#0" expanded="false" />
+            <element signature="e#30025#30026#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#31366:33235" expanded="false" />
+            <element signature="e#33090#33123#0" expanded="false" />
             <element signature="method#loadUserData#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#32891:35410" expanded="false" />
-            <element signature="method#onDataChange#0;class#32891:35410" expanded="false" />
-            <element signature="class#33348:35077" expanded="false" />
-            <element signature="method#onDataChange#0;class#33348:35077" expanded="false" />
-            <element signature="method#onCancelled#0;class#33348:35077" expanded="false" />
-            <element signature="method#onCancelled#0;class#32891:35410" expanded="false" />
-            <element signature="e#35327#35346#0" expanded="false" />
+            <element signature="class#33496:36015" expanded="false" />
+            <element signature="method#onDataChange#0;class#33496:36015" expanded="false" />
+            <element signature="class#33953:35682" expanded="false" />
+            <element signature="method#onDataChange#0;class#33953:35682" expanded="false" />
+            <element signature="method#onCancelled#0;class#33953:35682" expanded="false" />
+            <element signature="method#onCancelled#0;class#33496:36015" expanded="false" />
+            <element signature="e#35932#35951#0" expanded="false" />
             <element signature="docComment;method#getCategories#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getCategories#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#35904:37477" expanded="false" />
-            <element signature="method#onDataChange#0;class#35904:37477" expanded="false" />
-            <element signature="method#onCancelled#0;class#35904:37477" expanded="false" />
-            <element signature="e#39506#39606#0" expanded="false" />
-            <element signature="method#addOfflineItems#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#41119#41211#0" expanded="false" />
+            <element signature="e#40111#40211#0" expanded="false" />
+            <element signature="e#41724#41816#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#43189#43459#0" expanded="true" />
-            <element signature="e#43458#43459#0" expanded="true" />
+            <element signature="e#43794#44064#0" expanded="true" />
+            <element signature="e#44063#44064#0" expanded="true" />
             <element signature="method#logOut#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#fabClicked#0;class#MainActivity#0" expanded="false" />
             <element signature="method#fabClicked#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#checkGps#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#checkGps#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#requestLocationPermission#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#requestLocationPermission#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#46889#46969#0" expanded="false" />
             <element signature="docComment;method#firebaseAuthIntalize#0;class#MainActivity#0" expanded="false" />
             <element signature="method#firebaseAuthIntalize#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#48343#48915#0" expanded="true" />
-            <element signature="e#48914#48915#0" expanded="true" />
+            <element signature="e#48948#49520#0" expanded="true" />
+            <element signature="e#49519#49520#0" expanded="true" />
             <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MainActivity#0" expanded="false" />
             <element signature="method#customDialog#0;class#MainActivity#0" expanded="false" />
             <element signature="method#myLocationFabClicked#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#49631#49713#0" expanded="false" />
+            <element signature="e#50236#50318#0" expanded="false" />
             <element signature="method#inbox#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#moveCameraToPosition#0;class#MainActivity#0" expanded="false" />
             <element signature="method#moveCameraToPosition#0;class#MainActivity#0" expanded="false" />
@@ -3621,60 +3609,58 @@
             <element signature="docComment;method#moveCameraToMyPosition#0;class#MainActivity#0" expanded="false" />
             <element signature="method#moveCameraToMyPosition#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#onMapReady#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#53090#53117#0" expanded="false" />
-            <element signature="e#53551#53608#0" expanded="false" />
-            <element signature="e#54365#54969#0" expanded="true" />
-            <element signature="e#54968#54969#0" expanded="true" />
-            <element signature="e#55015#55725#0" expanded="true" />
-            <element signature="e#55525#55602#0" expanded="false" />
-            <element signature="e#55724#55725#0" expanded="true" />
-            <element signature="class#55767:57473" expanded="false" />
-            <element signature="method#getInfoContents#0;class#55767:57473" expanded="false" />
+            <element signature="e#53695#53722#0" expanded="false" />
+            <element signature="e#54156#54213#0" expanded="false" />
+            <element signature="e#54970#55574#0" expanded="true" />
+            <element signature="e#55573#55574#0" expanded="true" />
+            <element signature="e#55620#56330#0" expanded="true" />
+            <element signature="e#56130#56207#0" expanded="false" />
+            <element signature="e#56329#56330#0" expanded="true" />
+            <element signature="class#56372:58078" expanded="false" />
+            <element signature="method#getInfoContents#0;class#56372:58078" expanded="false" />
             <element signature="docComment;method#intentToEditProfile#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#intentToEditProfile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#59420#59501#0" expanded="false" />
+            <element signature="e#60025#60106#0" expanded="false" />
             <element signature="docComment;method#setMyLocationOnMap#0;class#MainActivity#0" expanded="false" />
             <element signature="method#showSnackbar#0;class#MainActivity#0" expanded="false" />
             <element signature="method#populateBusinessPlaces#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#61440:62127" expanded="false" />
-            <element signature="method#onDataChange#0;class#61440:62127" expanded="false" />
+            <element signature="class#62045:62732" expanded="false" />
+            <element signature="method#onDataChange#0;class#62045:62732" expanded="false" />
             <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getAboutFromRemoteConfig#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#62541#62571#0" expanded="false" />
-            <element signature="e#62721#62756#0" expanded="false" />
-            <element signature="e#63366#63390#0" expanded="false" />
-            <element signature="e#64181#64272#0" expanded="false" />
-            <element signature="e#64440#64477#0" expanded="false" />
-            <element signature="e#64964#65448#0" expanded="true" />
-            <element signature="e#65177#65261#0" expanded="false" />
-            <element signature="e#65447#65448#0" expanded="true" />
+            <element signature="e#63146#63176#0" expanded="false" />
+            <element signature="e#63326#63361#0" expanded="false" />
+            <element signature="e#63971#63995#0" expanded="false" />
+            <element signature="e#64786#64877#0" expanded="false" />
+            <element signature="e#65045#65082#0" expanded="false" />
+            <element signature="e#65569#66053#0" expanded="true" />
+            <element signature="e#65782#65866#0" expanded="false" />
+            <element signature="e#66052#66053#0" expanded="true" />
             <element signature="method#filterMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#65793:69111" expanded="false" />
-            <element signature="method#onDataChange#0;class#65793:69111" expanded="false" />
-            <element signature="method#onCancelled#0;class#65793:69111" expanded="false" />
+            <element signature="class#66398:69716" expanded="false" />
+            <element signature="method#onDataChange#0;class#66398:69716" expanded="false" />
+            <element signature="method#onCancelled#0;class#66398:69716" expanded="false" />
             <element signature="method#searchMapByTitle#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#69260:70639" expanded="false" />
-            <element signature="method#onDataChange#0;class#69260:70639" expanded="false" />
-            <element signature="method#onCancelled#0;class#69260:70639" expanded="false" />
+            <element signature="class#69865:71244" expanded="false" />
+            <element signature="method#onDataChange#0;class#69865:71244" expanded="false" />
+            <element signature="method#onCancelled#0;class#69865:71244" expanded="false" />
             <element signature="docComment;method#setupDistrictSpinner#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setupDistrictSpinner#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#71357:72250" expanded="false" />
-            <element signature="method#onItemSelected#0;class#71357:72250" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#71357:72250" expanded="false" />
+            <element signature="class#71962:72855" expanded="false" />
+            <element signature="method#onItemSelected#0;class#71962:72855" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#71962:72855" expanded="false" />
             <element signature="method#setupCategorySpinner#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#73046:74083" expanded="false" />
-            <element signature="method#onItemSelected#0;class#73046:74083" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#73046:74083" expanded="false" />
+            <element signature="class#73651:74688" expanded="false" />
+            <element signature="method#onItemSelected#0;class#73651:74688" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#73651:74688" expanded="false" />
             <element signature="docComment;method#updateUI#0;class#MainActivity#0" expanded="false" />
             <element signature="method#updateUI#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#74695:75887" expanded="false" />
-            <element signature="method#onDataChange#0;class#74695:75887" expanded="false" />
-            <element signature="method#onCancelled#0;class#74695:75887" expanded="false" />
-            <element signature="class#76012:77156" expanded="false" />
-            <element signature="method#onDataChange#0;class#76012:77156" expanded="false" />
-            <element signature="method#onCancelled#0;class#76012:77156" expanded="false" />
+            <element signature="class#75300:76492" expanded="false" />
+            <element signature="method#onDataChange#0;class#75300:76492" expanded="false" />
+            <element signature="method#onCancelled#0;class#75300:76492" expanded="false" />
+            <element signature="class#76617:77761" expanded="false" />
+            <element signature="method#onDataChange#0;class#76617:77761" expanded="false" />
+            <element signature="method#onCancelled#0;class#76617:77761" expanded="false" />
             <element signature="method#getDistrictsItems#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getCityItems#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getCitiesOfDistrict#0;class#MainActivity#0" expanded="false" />
