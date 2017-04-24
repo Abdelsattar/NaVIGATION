@@ -131,5 +131,6 @@
     <string name="ad_mob_real_id">ca-app-pub-1670144099232554~4403628425</string>
 
     <string name="choose_category">Choose Category</string>
+    <string name="title_activity_google_places_details">GooglePlacesDetails</string>
 
 </resources>

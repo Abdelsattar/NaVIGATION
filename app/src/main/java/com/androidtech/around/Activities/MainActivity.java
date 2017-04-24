@@ -34,6 +34,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -42,7 +43,9 @@ import com.androidtech.around.Models.BusinessPlace;
 import com.androidtech.around.Models.Category;
 import com.androidtech.around.Models.City;
 import com.androidtech.around.Models.Districs;
+import com.androidtech.around.Models.GooglePlaces.Details.Details;
 import com.androidtech.around.Models.GooglePlaces.PlacesRespose;
+import com.androidtech.around.Models.GooglePlaces.Result;
 import com.androidtech.around.Models.PlacesCategories;
 import com.androidtech.around.Models.Specialization;
 import com.androidtech.around.R;
@@ -84,6 +87,8 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import com.google.gson.Gson;
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.mikepenz.materialdrawer.AccountHeader;
@@ -176,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private List<BusinessPlace> myBusiness;
     private List<BusinessPlace> mUserBusiness;
     private Map<String, Object> mBusinessPlaceList;
+    private Map<String, Object> mGooglePlaceList;
     private BusinessPlace mNewAddedBusiness;
     int counter = 1;
     int userPlacesCounter = 200;
@@ -189,9 +195,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean mCategorySpinnerListener = true;
 
     private ArrayList<Category> mCategoryList;
+    private List<Result> resultArrayList;
+    private List <com.androidtech.around.Models.GooglePlaces.Details.Result> detailesResultsList;
+    private Map<String, Object> mGooglePlaceDetailsList;
 
     private List<PlacesCategories> placesCategoriesList;
     private SpinnerAdapter mSpinnerAdapter;
+    String currentCategory = "";
+    String[] googlePlaceDetails;
 
 
     /**
@@ -226,8 +237,32 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         mDistrictsList = new ArrayList<>();
         mCategoryList = new ArrayList<>();
+        resultArrayList = new ArrayList<>();
         mBusinessPlaceList = new HashMap<>();
+        mGooglePlaceDetailsList = new HashMap<>();
+        mGooglePlaceList = new HashMap<>();
+        detailesResultsList = new ArrayList<>();
+        googlePlaceDetails = new String[5];
         mustShowAdd = true;
+
+        PermissionListener permissionlistener = new PermissionListener() {
+            @Override
+            public void onPermissionGranted() {
+                //Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
+                setMyLocationOnMap();
+            }
+
+            @Override
+            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+                Toast.makeText(MainActivity.this, "Permission Denied\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        new TedPermission(this)
+                .setPermissionListener(permissionlistener)
+                .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
+                .setPermissions(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION  )
+                .check();
 
         menuYellow.setOnMenuToggleListener(new FloatingActionMenu.OnMenuToggleListener() {
             @Override
@@ -688,6 +723,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 if (position != 1) {
                                     PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier() - 50);
                                     PerformGetPlaces(category.getFr_name(), category.getIcon());
+                                    currentCategory = category.getFr_name();
                                 }
 
                             } else {
@@ -897,11 +933,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (mCurrentLocation != null) {
             Call<PlacesRespose> apiModelCall = place.getPlaces(String.valueOf(mCurrentLocation.getLatitude()) + "," +
                             String.valueOf(mCurrentLocation.getLongitude()), "10000",
-                    categoryName, Constants.API_KEY);
+                    categoryName, Constants.SERVER_KEY);
             apiModelCall.enqueue(new Callback<PlacesRespose>() {
                 @Override
                 public void onResponse(Call<PlacesRespose> call, Response<PlacesRespose> response) {
                     int code = response.code();
+                    if (response.body()!=null){
+                        resultArrayList = response.body().results;
+                    }
                     if (response.body().getResults().size() == 0) {
                         if (mProgressDialog.isShowing())
                             mProgressDialog.dismiss();
@@ -910,9 +949,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     }
                     Log.e("Response", new Gson().toJson(response.body()));
                     for (int i = 0; i < response.body().getResults().size(); i++) {
-
+                        PerformGetDetails(response.body().getResults().get(i).getPlaceId());
                         LatLng latLng = new LatLng(response.body().getResults().get(i).getGeometry().getLocation().getLat(),
                                 response.body().getResults().get(i).getGeometry().getLocation().getLng());
+                        String key = response.body().getResults().get(i).getGeometry().getLocation().getLat() + "," +
+                                response.body().getResults().get(i).getGeometry().getLocation().getLng();
+                        mGooglePlaceList.put(key,response.body().getResults().get(i));
                         addPlacesMarker(Icon, latLng);
                         myLocationFabClicked();
 //                    Log.e("currentLocation name ", response.body().getResults().get(i).getName());
@@ -939,6 +981,35 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     if (mProgressDialog.isShowing())
                         mProgressDialog.dismiss();
                     showSnackbar(R.string.error_occurred);
+                }
+            });
+        }
+
+    }
+
+    public void PerformGetDetails(String id) {
+        //"restaurants"
+        mProgressDialog.show();
+        ServiceBuilder builder = new ServiceBuilder();
+        ServiceInterfaces.Details details = builder.details();
+        if (mCurrentLocation != null) {
+            Call<Details> apiModelCall = details.details(id, Constants.SERVER_KEY);
+            apiModelCall.enqueue(new Callback<Details>() {
+                @Override
+                public void onResponse(Call<Details> call, Response<Details> response) {
+                    int code = response.code();
+                    if (code == 200){
+                        detailesResultsList.add(response.body().getResult());
+                        String key = response.body().getResult().getGeometry().getLocation().getLat()+","+
+                                response.body().getResult().getGeometry().getLocation().getLng();
+                        mGooglePlaceDetailsList.put(key,response.body().getResult());
+                    }
+                    Log.e("Details", String.valueOf(response.body()));
+                }
+
+                @Override
+                public void onFailure(Call<Details> call, Throwable t) {
+                    Log.e("Details", "failed");
                 }
             });
         }
@@ -1269,7 +1340,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
                     != PackageManager.PERMISSION_GRANTED) {
                 // Location permission has not been granted.
-                requestLocationPermission();
+                //requestLocationPermission();
             }
         } else {
             setMyLocationOnMap();
@@ -1294,14 +1365,29 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
-                BusinessPlace place = new BusinessPlace();
-                place = (BusinessPlace) mBusinessPlaceList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
-                if (place != null) {
-                    startActivity(new Intent(MainActivity.this, MarkerDetailsActivity.class)
-                            .putExtra("extra_place", place));
+                if (!isGoogleCategory){
+                    BusinessPlace place = new BusinessPlace();
+                    place = (BusinessPlace) mBusinessPlaceList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
+                    if (place != null) {
+                        startActivity(new Intent(MainActivity.this, MarkerDetailsActivity.class)
+                                .putExtra("extra_place", place));
 //                            .putExtra("lat",mCurrentLocation.getLatitude())
 //                            .putExtra("lng",mCurrentLocation.getLongitude()));
+                    }
+                }else if (isGoogleCategory){
+                    Result result = (Result) mGooglePlaceList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
+                    com.androidtech.around.Models.GooglePlaces.Details.Result detailsResult = new com.androidtech.around.Models.GooglePlaces.Details.Result();
+                    detailsResult = (com.androidtech.around.Models.GooglePlaces.Details.Result)  mGooglePlaceDetailsList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
+                    if (result != null) {
+                        googlePlaceDetails[0] = result.getName();
+                        googlePlaceDetails[1] = String.valueOf(result.getRating());
+                        googlePlaceDetails[2] = String.valueOf(detailsResult.getFormattedAddress());
+                        googlePlaceDetails[3] = String.valueOf(detailsResult.getInternationalPhoneNumber());
+                        startActivity(new Intent(MainActivity.this, GooglePlacesDetails.class)
+                                .putExtra("extra_place", googlePlaceDetails));
+                    }
                 }
+
             }
         });
 
@@ -1323,17 +1409,32 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 final ImageView iv_action = (ImageView) v.findViewById(R.id.iv_action);
                 final ImageView iv_chat = (ImageView) v.findViewById(R.id.iv_chat);
 
-                if (mBusinessPlaceList.size() != 0) {
-                    BusinessPlace place = new BusinessPlace();
-                    place = (BusinessPlace) mBusinessPlaceList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
-                    if (place != null) {
-                        if (mCurrentUser != null && !mCurrentUser.isAnonymous())
-                            iv_chat.setVisibility(View.VISIBLE);
-                        tv_description.setText(place.getSpecialization());
-                        tv_title.setText(place.getTitle());
-                        tv_category.setText(place.getCategory());  //place.getspecialization
-                    } else
-                        showSnackbar(R.string.no_info_error);
+                if(!isGoogleCategory){
+                    if(mBusinessPlaceList.size() != 0){
+                        BusinessPlace place = new BusinessPlace();
+                        place = (BusinessPlace) mBusinessPlaceList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
+                        if (place != null) {
+                            if (mCurrentUser != null && !mCurrentUser.isAnonymous())
+                                iv_chat.setVisibility(View.VISIBLE);
+                            tv_description.setText(place.getSpecialization());
+                            tv_title.setText(place.getTitle());
+                            tv_category.setText(place.getCategory());  //place.getspecialization
+                        } else
+                            showSnackbar(R.string.no_info_error);
+                    }
+                } else if (isGoogleCategory){
+                    if(resultArrayList.size()!=0){
+                        BusinessPlace place = new BusinessPlace();
+                        Result result = (Result) mGooglePlaceList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
+                        com.androidtech.around.Models.GooglePlaces.Details.Result detailsResult = new com.androidtech.around.Models.GooglePlaces.Details.Result();
+                        detailsResult = (com.androidtech.around.Models.GooglePlaces.Details.Result)  mGooglePlaceDetailsList.get(marker.getPosition().latitude + "," + marker.getPosition().longitude);
+                        if (result != null) {
+                            tv_description.setText(String.valueOf(detailsResult.getFormattedPhoneNumber()));
+                            tv_title.setText(result.getName());
+                            tv_category.setText(currentCategory);  //place.getspecialization
+                        } else
+                            showSnackbar(R.string.no_info_error);
+                    }
                 }
 
                 return v;

@@ -23,4 +23,8 @@ public class ServiceBuilder {
     public ServiceInterfaces.Place getPlaces(){
         return retrofit.create(ServiceInterfaces.Place.class);
     }
+
+    public ServiceInterfaces.Details details(){
+        return retrofit.create(ServiceInterfaces.Details.class);
+    }
 }

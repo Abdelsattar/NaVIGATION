@@ -4,18 +4,20 @@
     package="com.androidtech.around">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
-        android:name=".App"
         tools:replace="android:icon">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -62,10 +64,10 @@
         </activity>
         <activity
             android:name=".Activities.MarkerDetailsActivity"
+            android:exported="true"
             android:label="@string/title_activity_marker_details"
             android:parentActivityName=".Activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true">
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.androidtech.around.Activities.MainActivity" />
@@ -105,7 +107,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.androidtech.around.Activities.MainActivity" />
         </activity>
-
         <activity
             android:name=".Activities.ConversionActivity"
             android:label="@string/title_activity_conversion"
@@ -115,6 +116,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.androidtech.around.Activities.InboxActivity" />
         </activity>
+        <activity
+            android:name=".Activities.GooglePlacesDetails"
+            android:label="@string/title_activity_google_places_details"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

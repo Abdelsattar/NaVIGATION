@@ -23,4 +23,13 @@ public interface ServiceInterfaces {
                 @Query("key") String API_KEY
         );
     }
+
+    interface Details {
+        @GET("/maps/api/place/details/json")
+        Call<com.androidtech.around.Models.GooglePlaces.Details.Details> details(
+                @Query("placeid") String id,
+                @Query("key") String API_KEY
+        );
+    }
+
 }
