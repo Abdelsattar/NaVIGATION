@@ -89,7 +89,7 @@
         android:inputType="text"
         android:maxLines="1"
         android:maxLength="40"
-        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:drawableLeft="@drawable/ic_settings_phone_black_24dp"
         android:drawablePadding="@dimen/activity_horizontal_margin"/>
 
     <View

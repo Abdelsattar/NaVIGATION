@@ -163,6 +163,13 @@
             fab:fab_label="@string/location_current" />
 
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/places_here_fab"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="@string/location_here" />
+
+        <com.github.clans.fab.FloatingActionButton
             android:id="@+id/filter"
             style="@style/MenuButtonsStyle"
             android:layout_width="wrap_content"

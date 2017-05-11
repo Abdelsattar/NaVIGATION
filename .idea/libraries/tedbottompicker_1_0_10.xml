@@ -4,8 +4,8 @@
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/gun0912.ted/tedbottompicker/1.0.10/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/gun0912.ted/tedbottompicker/1.0.10/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/gun0912.ted/tedbottompicker/1.0.10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3548f9e17ea956e5183d840e39f9db0f91dc2214/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3548f9e17ea956e5183d840e39f9db0f91dc2214/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

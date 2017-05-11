@@ -4,8 +4,8 @@
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/0c0ca47268c9321bf9c44dd64fd638bfe0cdc71b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/0c0ca47268c9321bf9c44dd64fd638bfe0cdc71b/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

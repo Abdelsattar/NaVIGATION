@@ -87,6 +87,7 @@
             android:inputType="text"
             android:maxLines="1"
             android:maxLength="40"
+            android:drawableLeft="@drawable/ic_assignment_black_24dp"
             android:drawablePadding="@dimen/activity_horizontal_margin"/>
 
         <View
@@ -120,6 +121,7 @@
                 android:maxLength="20"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/editProfile_text"
+                android:drawableLeft="@drawable/ic_settings_phone_black_24dp"
                 android:drawablePadding="@dimen/activity_horizontal_margin"
                 />
         </LinearLayout>
@@ -155,6 +157,7 @@
                 android:maxLength="20"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/editProfile_text"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"
                 android:drawablePadding="@dimen/activity_horizontal_margin"
                 />
         </LinearLayout>
@@ -341,6 +344,7 @@
             android:textSize="16sp"
             android:background="@android:color/transparent"
             android:inputType="textCapSentences|textMultiLine"
+            android:drawableLeft="@drawable/ic_assignment_black_24dp"
             android:drawablePadding="@dimen/activity_horizontal_margin"
             android:scrollHorizontally="false"/>
 

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="materialdrawer-5.8.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.8.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.8.1/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/674b88973f695980f19b16b5b577bd17f7c0cce5/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/674b88973f695980f19b16b5b577bd17f7c0cce5/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

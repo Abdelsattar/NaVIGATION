@@ -132,5 +132,10 @@
 
     <string name="choose_category">Choose Category</string>
     <string name="title_activity_google_places_details">GooglePlacesDetails</string>
+    <string name="location_here">Get Places Here</string>
+    <string name="choose_places">Choose Places</string>
+    <string name="google_map_places">Google map places</string>
+    <string name="app_places">App Places</string>
+    <string name="choose">Choose</string>
 
 </resources>

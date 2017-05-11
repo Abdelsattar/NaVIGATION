@@ -113,6 +113,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 import butterknife.BindString;
 import butterknife.BindView;
@@ -125,7 +126,8 @@ import retrofit2.Response;
 import static com.androidtech.around.R.id.fab;
 import static com.androidtech.around.R.id.map;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, ActivityCompat.OnRequestPermissionsResultCallback {
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, ActivityCompat.OnRequestPermissionsResultCallback,
+        GoogleMap.OnMarkerDragListener, View.OnClickListener{
 
     //region views section
     @BindString(R.string.extra_business_id)
@@ -136,6 +138,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     com.github.clans.fab.FloatingActionButton mAddFab;
     @BindView(R.id.my_location_fab)
     com.github.clans.fab.FloatingActionButton mMyLocationFab;
+    @BindView(R.id.places_here_fab)
+    com.github.clans.fab.FloatingActionButton mPlacesHereFab;
     @BindView(R.id.filter)
     com.github.clans.fab.FloatingActionButton filter;
     @BindView(R.id.inbox)
@@ -193,6 +197,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private List<Districs> mDistrictsList;
     private boolean mSpinnerListener = true;
     private boolean mCategorySpinnerListener = true;
+    private boolean firstMarker = true;
+    private boolean fromMenue;
 
     private ArrayList<Category> mCategoryList;
     private List<Result> resultArrayList;
@@ -202,6 +208,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private List<PlacesCategories> placesCategoriesList;
     private SpinnerAdapter mSpinnerAdapter;
     String currentCategory = "";
+    String currentIcon = "";
     String[] googlePlaceDetails;
 
 
@@ -245,24 +252,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         googlePlaceDetails = new String[5];
         mustShowAdd = true;
 
-        PermissionListener permissionlistener = new PermissionListener() {
-            @Override
-            public void onPermissionGranted() {
-                //Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
-                setMyLocationOnMap();
-            }
-
-            @Override
-            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
-                Toast.makeText(MainActivity.this, "Permission Denied\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT).show();
-            }
-        };
-
-        new TedPermission(this)
-                .setPermissionListener(permissionlistener)
-                .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
-                .setPermissions(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION  )
-                .check();
+        checkGAPSForHighVersions();
 
         menuYellow.setOnMenuToggleListener(new FloatingActionMenu.OnMenuToggleListener() {
             @Override
@@ -276,12 +266,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             filter.setVisibility(View.GONE);
                             inbox.setVisibility(View.GONE);
                             mAddPlaceLayout.setVisibility(View.GONE);
+                            mPlacesHereFab.setVisibility(View.VISIBLE);
                         } else {
                             mAddFab.setVisibility(View.VISIBLE);
                             mAddFab.setLabelText(getString(R.string.sign_in));
                             inbox.setVisibility(View.GONE);
                             filter.setVisibility(View.VISIBLE);
                             mAddPlaceLayout.setVisibility(View.GONE);
+                            mPlacesHereFab.setVisibility(View.GONE);
                         }
                     } else {
                         if (isGoogleCategory) {
@@ -290,12 +282,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             filter.setVisibility(View.GONE);
                             inbox.setVisibility(View.GONE);
                             mAddPlaceLayout.setVisibility(View.GONE);
+                            mPlacesHereFab.setVisibility(View.VISIBLE);
                         } else {
                             mAddFab.setVisibility(View.VISIBLE);
                             mAddFab.setLabelText(getString(R.string.title_activity_add_business));
                             inbox.setVisibility(View.VISIBLE);
                             filter.setVisibility(View.VISIBLE);
                             mAddPlaceLayout.setVisibility(View.VISIBLE);
+                            mPlacesHereFab.setVisibility(View.GONE);
                         }
                     }
 
@@ -427,17 +421,48 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         });
     }
 
+    private void getPlacesHere() {
+
+            if (mCurrentLocation!=null && !Objects.equals(currentCategory, "") && !Objects.equals(currentIcon, "")){
+                mMap.clear();
+                moveCameraToMyPosition(mMap.getCameraPosition().target);
+                PerformGetPlaces(currentCategory, currentIcon, String.valueOf(mMap.getCameraPosition().target.latitude),
+                        String.valueOf(mMap.getCameraPosition().target.longitude),false);
+                MarkerOptions markerOne = new MarkerOptions()
+                        .position(new LatLng(mMap.getCameraPosition().target.latitude, mMap.getCameraPosition().target.longitude)).title("Drag to any location");
+                target = new PicassoMarker(mMap.addMarker(markerOne), getApplication());
+            }
+    }
+
+
+
     private void checkGAPSForHighVersions() {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-        }
+            PermissionListener permissionlistener = new PermissionListener() {
+                @Override
+                public void onPermissionGranted() {
+                    //Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
+                    setMyLocationOnMap();
+                }
 
+                @Override
+                public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+                    Toast.makeText(MainActivity.this, "Permission Denied\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT).show();
+                }
+            };
+
+            new TedPermission(this)
+                    .setPermissionListener(permissionlistener)
+                    .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
+                    .setPermissions(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION)
+                    .check();
+        }
     }
 
     public void showChooseCategoryDilog(boolean canceable) {
         new MaterialDialog.Builder(this)
-                .title("Choose Places")
-                .items(new String[]{"Google map places", "App Places"})
+                .title(R.string.choose_places)
+                .items(new String[]{getString(R.string.google_map_places), getString(R.string.app_places)})
                 .cancelable(false)
                 .itemsCallbackSingleChoice(0, new MaterialDialog.ListCallbackSingleChoice() {
                     @Override
@@ -463,7 +488,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         return true;
                     }
                 })
-                .positiveText("Choose")
+                .positiveText(R.string.choose)
                 .show();
 
     }
@@ -722,8 +747,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 mMap.clear();
                                 if (position != 1) {
                                     PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier() - 50);
-                                    PerformGetPlaces(category.getFr_name(), category.getIcon());
+                                    if (mCurrentLocation!=null) {
+                                        firstMarker = true;
+                                        PerformGetPlaces(category.getFr_name(), category.getIcon(),String.valueOf(mCurrentLocation.getLatitude()),
+                                                String.valueOf(mCurrentLocation.getLongitude()), true);
+                                    }
                                     currentCategory = category.getFr_name();
+                                    currentIcon = category.getIcon();
                                 }
 
                             } else {
@@ -923,7 +953,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Picasso.with(MainActivity.this).load(icon).into(target);
     }
 
-    public void PerformGetPlaces(String categoryName, final String Icon) {
+    public void PerformGetPlaces(String categoryName, final String Icon, String lat, String lng, final boolean fromMenue) {
         //"restaurants"
         Log.e("Category_key", categoryName);
 
@@ -931,8 +961,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         ServiceBuilder builder = new ServiceBuilder();
         ServiceInterfaces.Place place = builder.getPlaces();
         if (mCurrentLocation != null) {
-            Call<PlacesRespose> apiModelCall = place.getPlaces(String.valueOf(mCurrentLocation.getLatitude()) + "," +
-                            String.valueOf(mCurrentLocation.getLongitude()), "10000",
+            Call<PlacesRespose> apiModelCall = place.getPlaces(lat + "," + lng, "10000",
                     categoryName, Constants.SERVER_KEY);
             apiModelCall.enqueue(new Callback<PlacesRespose>() {
                 @Override
@@ -944,6 +973,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     if (response.body().getResults().size() == 0) {
                         if (mProgressDialog.isShowing())
                             mProgressDialog.dismiss();
+                        myLocationFabClicked();
                         showSnackbar(R.string.no_places);
                         return;
                     }
@@ -956,7 +986,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 response.body().getResults().get(i).getGeometry().getLocation().getLng();
                         mGooglePlaceList.put(key,response.body().getResults().get(i));
                         addPlacesMarker(Icon, latLng);
-                        myLocationFabClicked();
+                        if (fromMenue) {
+                            myLocationFabClicked();
+                        }
 //                    Log.e("currentLocation name ", response.body().getResults().get(i).getName());
 //                    Log.e("currentLocation ratin ", String.valueOf(response.body().getResults().get(i).getRating()));
                         if (response.body().getResults().get(i).getPhotos() != null && response.body().getResults().get(i).getPhotos().size() > 0) {
@@ -968,9 +1000,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                     //reset map camera
                     //resetMapCamera();
-                    if (mCurrentLocation != null) {
-                        LatLng mlatLng = new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude());
-                        moveCameraToMyPosition(mlatLng);
+                    if (fromMenue) {
+                        if (mCurrentLocation != null) {
+                            LatLng mlatLng = new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude());
+                            moveCameraToMyPosition(mlatLng);
+                        }
                     }
                     if (mProgressDialog.isShowing())
                         mProgressDialog.dismiss();
@@ -1241,6 +1275,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (mCurrentLocation != null) { // Check to ensure coordinates aren't null, probably a better way of doing this...
             // Construct a CameraPosition focusing on Mountain View and animate the camera to that position.
             moveCameraToPosition(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()));
+            if (isGoogleCategory){
+                //addLocationMarker(mCurrentLocation);
+            }
         } else {
             checkGps();
         }
@@ -1317,6 +1354,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         mMap = googleMap;
 
+        mMap.setOnMarkerDragListener(this);
+
+        mPlacesHereFab.setOnClickListener(this);
+
+//        mMap.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
+//            @Override
+//            public void onCameraChange(CameraPosition cameraPosition) {
+//                mMap.clear();
+//                MarkerOptions markerOne = new MarkerOptions()
+//                        .position(new LatLng(mMap.getCameraPosition().target.latitude, mMap.getCameraPosition().target.longitude)).title("").draggable(true);
+//                target = new PicassoMarker(mMap.addMarker(markerOne), getApplication());
+//            }
+//        });
+
         //disable toolbar navigation icon
         mMap.getUiSettings().setMapToolbarEnabled(false);
 
@@ -1338,6 +1389,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                     != PackageManager.PERMISSION_GRANTED
                     || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                    != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.LOCATION_HARDWARE)
                     != PackageManager.PERMISSION_GRANTED) {
                 // Location permission has not been granted.
                 //requestLocationPermission();
@@ -1355,6 +1407,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     //change fab icon
                     mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_my_location)
                             .color(getResources().getColor(R.color.white)).sizeDp(24));
+                    mPlacesHereFab.setImageDrawable(getDrawable(R.drawable.ic_pin_drop_black_24dp));
                 } else {
                     mCurrentLocation = getLastKnownLocation();
                 }
@@ -1464,6 +1517,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mCurrentLocation = null;
             mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_gps_off)
                     .color(Color.WHITE).sizeDp(24));
+            mPlacesHereFab.setImageDrawable(getDrawable(R.drawable.ic_pin_drop_black_24dp));
         }
         return bestLocation;
     }
@@ -1510,7 +1564,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      * set my location button enabled on map and set padding to make
      */
     private void setMyLocationOnMap() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, Manifest.permission.LOCATION_HARDWARE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
         mMap.setMyLocationEnabled(true);
@@ -1555,6 +1610,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         target = new PicassoMarker(mMap.addMarker(markerOne), this);
         Picasso.with(MainActivity.this).load(place.getIcon()).into(target);
+    }
+
+    public void addLocationMarker(Location currentLocation) {
+
+        if (firstMarker) {
+            MarkerOptions markerOne = new MarkerOptions()
+                    .position(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude())).title("Drag to any location").draggable(true);
+            target = new PicassoMarker(mMap.addMarker(markerOne), this);
+        }
+        firstMarker = false;
+//        Picasso.with(MainActivity.this).load(place.getIcon()).into(target);
     }
 
     private void getAboutFromRemoteConfig() {
@@ -1992,4 +2058,38 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onResume();
     }
 
+    @Override
+    public void onMarkerDragStart(Marker marker) {
+        // TODO Auto-generated method stub
+        Log.e("System out", "onMarkerDragStart..."+marker.getPosition().latitude+"..."+marker.getPosition().longitude);
+    }
+
+    @Override
+    public void onMarkerDrag(Marker marker) {
+        // TODO Auto-generated method stub
+        Log.e("System out", "onMarkerDragEnd..."+marker.getPosition().latitude+"..."+marker.getPosition().longitude);
+        mMap.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()));
+    }
+
+    @Override
+    public void onMarkerDragEnd(Marker marker) {
+        // TODO Auto-generated method stub
+        Log.e("System out", "onMarkerDrag...");
+        mMap.clear();
+        moveCameraToMyPosition(marker.getPosition());
+        if (mCurrentLocation!=null && !Objects.equals(currentCategory, "") && !Objects.equals(currentIcon, "")){
+            PerformGetPlaces(currentCategory, currentIcon, String.valueOf(marker.getPosition().latitude), String.valueOf(marker.getPosition().longitude),false);
+        }
+        MarkerOptions markerOne = new MarkerOptions()
+                .position(new LatLng(marker.getPosition().latitude, marker.getPosition().longitude)).title("Drag to any location");
+        target = new PicassoMarker(mMap.addMarker(markerOne), this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.places_here_fab:
+                getPlacesHere();
+        }
+    }
 }

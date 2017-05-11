@@ -88,7 +88,7 @@ public class MarkerDetailsActivity extends AppCompatActivity implements View.OnC
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        addLeftDrawables();
+        //addLeftDrawables();
 
         customDialog();
 
@@ -248,25 +248,25 @@ public class MarkerDetailsActivity extends AppCompatActivity implements View.OnC
                 .icon(GoogleMaterial.Icon.gmd_phone)
                 .color(getResources().getColor(R.color.editProfile_icon))
                 .sizeDp(20);
-        phone.setCompoundDrawables(drawable, null, null, null );
+        phone.setCompoundDrawables(getDrawable(R.drawable.ic_settings_phone_black_24dp), null, null, null );
 
         drawable = new IconicsDrawable(this)
                 .icon(GoogleMaterial.Icon.gmd_email)
                 .color(getResources().getColor(R.color.editProfile_icon))
                 .sizeDp(20);
-        email.setCompoundDrawables(drawable, null, null, null );
+        email.setCompoundDrawables(getDrawable(R.drawable.ic_mail_black_24dp), null, null, null );
 
         drawable = new IconicsDrawable(this)
                 .icon(GoogleMaterial.Icon.gmd_assignment_ind)
                 .color(getResources().getColor(R.color.editProfile_icon))
                 .sizeDp(20);
-        title.setCompoundDrawables(drawable, null, null, null );
+        title.setCompoundDrawables(getDrawable(R.drawable.ic_assignment_black_24dp), null, null, null );
 
         drawable = new IconicsDrawable(this)
                 .icon(GoogleMaterial.Icon.gmd_announcement)
                 .color(getResources().getColor(R.color.editProfile_icon))
                 .sizeDp(20);
-        label_about.setCompoundDrawables(drawable, null, null, null );
+        label_about.setCompoundDrawables(getDrawable(R.drawable.ic_assignment_black_24dp), null, null, null );
     }
 
 
