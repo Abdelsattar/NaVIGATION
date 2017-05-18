@@ -1,6 +1,7 @@
 package com.androidtech.around.Activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.androidtech.around.R;
@@ -15,8 +17,14 @@ import com.androidtech.around.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class GooglePlacesDetails extends AppCompatActivity {
+public class GooglePlacesDetails extends AppCompatActivity implements View.OnClickListener {
 
+    @BindView(R.id.google_driving)
+    ImageView driving;
+    @BindView(R.id.google_bicycling)
+    ImageView bicycling;
+    @BindView(R.id.google_walking)
+    ImageView walking;
     @BindView(R.id.place_title)
     TextView mTitle;
     @BindView(R.id.place_rating)
@@ -25,9 +33,13 @@ public class GooglePlacesDetails extends AppCompatActivity {
     TextView mAddress;
     @BindView(R.id.place_phone)
     TextView mPhone;
-    String tittle, rating, address, phone;
+    String tittle, rating, address, phone, lat, lng;
     String [] placeDetails;
     ActionBar actionBar;
+
+    static String DRIVING_TAG = "driving";
+    static String WALKING_TAG = "walking";
+    static String BICYCLING_TAG = "bicycling";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +56,8 @@ public class GooglePlacesDetails extends AppCompatActivity {
             rating = placeDetails[1];
             address = placeDetails[2];
             phone = placeDetails[3];
+            lat = placeDetails[4];
+            lng = placeDetails[5];
             adaptViews();
         }
 
@@ -55,6 +69,10 @@ public class GooglePlacesDetails extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        driving.setOnClickListener(this);
+        bicycling.setOnClickListener(this);
+        walking.setOnClickListener(this);
     }
 
     private void adaptViews() {
@@ -69,4 +87,26 @@ public class GooglePlacesDetails extends AppCompatActivity {
         setTitle(tittle);
     }
 
+    private void launchNavigationIntent(String navMethod){
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                Uri.parse("http://maps.google.com/maps?daddr="+lat+","+lng+"&mode="+navMethod));
+        startActivity(intent);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.google_driving:
+                launchNavigationIntent(DRIVING_TAG);
+                break;
+
+            case R.id.google_walking:
+                launchNavigationIntent(WALKING_TAG);
+                break;
+
+            case R.id.google_bicycling:
+                launchNavigationIntent(BICYCLING_TAG);
+                break;
+        }
+    }
 }

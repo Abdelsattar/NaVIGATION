@@ -9,10 +9,12 @@ import java.util.List;
 public class PlacesCategories {
 
     String fr_name;
+    String api_name;
     String icon;
 
-    public PlacesCategories(String fr_name, String icon) {
+    public PlacesCategories(String fr_name, String api_name, String icon) {
         this.fr_name = fr_name;
+        this.api_name = api_name;
         this.icon = icon;
     }
 
@@ -28,4 +30,7 @@ public class PlacesCategories {
         return fr_name;
     }
 
+    public String getApi_name() {
+        return api_name;
+    }
 }

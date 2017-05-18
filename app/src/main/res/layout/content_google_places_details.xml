@@ -23,6 +23,35 @@
         android:src="@drawable/logo"
         />
 
+    <!--Change photo-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material">
+
+        <ImageView
+            android:id="@+id/google_driving"
+            android:src="@drawable/ic_directions_car_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"/>
+        <ImageView
+            android:id="@+id/google_walking"
+            android:src="@drawable/ic_directions_run_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"/>
+        <ImageView
+            android:src="@drawable/ic_directions_bike_black_24dp"
+            android:id="@+id/google_bicycling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/abc_list_item_padding_horizontal_material"

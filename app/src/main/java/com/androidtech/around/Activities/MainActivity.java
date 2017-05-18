@@ -249,7 +249,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mGooglePlaceDetailsList = new HashMap<>();
         mGooglePlaceList = new HashMap<>();
         detailesResultsList = new ArrayList<>();
-        googlePlaceDetails = new String[5];
+        googlePlaceDetails = new String[7];
         mustShowAdd = true;
 
         checkGAPSForHighVersions();
@@ -346,8 +346,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(this);
 
         //setup inbox fab
-        inbox.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_inbox)
-                .color(getResources().getColor(R.color.white)).sizeDp(20));
+        inbox.setImageDrawable(getDrawable(R.drawable.ic_message_black_24dp));
 
         mSignInLayout.setVisibility(View.INVISIBLE);
 
@@ -393,8 +392,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 //        checkGAPSForHighVersions();
 
         //change fab icon
-        mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_gps_off)
-                .color(Color.WHITE).sizeDp(24));
+        mMyLocationFab.setImageDrawable(getDrawable(R.drawable.ic_my_location_black_24dp));
 
         //get about from remote config
         getAboutFromRemoteConfig();
@@ -425,7 +423,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             if (mCurrentLocation!=null && !Objects.equals(currentCategory, "") && !Objects.equals(currentIcon, "")){
                 mMap.clear();
-                moveCameraToMyPosition(mMap.getCameraPosition().target);
+                moveCameraToGooglePlaces(mMap.getCameraPosition().target);
                 PerformGetPlaces(currentCategory, currentIcon, String.valueOf(mMap.getCameraPosition().target.latitude),
                         String.valueOf(mMap.getCameraPosition().target.longitude),false);
                 MarkerOptions markerOne = new MarkerOptions()
@@ -464,7 +462,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .title(R.string.choose_places)
                 .items(new String[]{getString(R.string.google_map_places), getString(R.string.app_places)})
                 .cancelable(false)
-                .itemsCallbackSingleChoice(0, new MaterialDialog.ListCallbackSingleChoice() {
+                .itemsCallbackSingleChoice(1, new MaterialDialog.ListCallbackSingleChoice() {
                     @Override
                     public boolean onSelection(MaterialDialog dialog, View view, int which, CharSequence text) {
                         if (which == 0) {
@@ -495,18 +493,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void initiateGooglePlacesList() {
         placesCategoriesList = new ArrayList<>();
-        placesCategoriesList.add(0, new PlacesCategories("hospital", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fhospital.png?alt=media&token=ab3c098f-3467-45ee-b761-1507c50440f3"));
-        placesCategoriesList.add(1, new PlacesCategories("bank", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fbank.png?alt=media&token=3d95cb80-0735-4f3d-b418-6f8ea6750e4f"));
-        placesCategoriesList.add(2, new PlacesCategories("airport", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
-        placesCategoriesList.add(3, new PlacesCategories("mosque", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
-        placesCategoriesList.add(4, new PlacesCategories("cafe", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fresturant.png?alt=media&token=8d64d944-b55f-4036-acd5-cf4bdefb5d78"));
-        placesCategoriesList.add(5, new PlacesCategories("museum", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
-        placesCategoriesList.add(6, new PlacesCategories("doctor", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fdoctor3.png?alt=media&token=dbdae35c-698b-465d-9d04-a7b20feb17c0"));
-        placesCategoriesList.add(7, new PlacesCategories("restaurant", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fresturant.png?alt=media&token=8d64d944-b55f-4036-acd5-cf4bdefb5d78"));
-        placesCategoriesList.add(8, new PlacesCategories("dentist", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fdoctor3.png?alt=media&token=dbdae35c-698b-465d-9d04-a7b20feb17c0"));
-        placesCategoriesList.add(9, new PlacesCategories("parking", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
-        placesCategoriesList.add(10, new PlacesCategories("gas_station", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
-
+        placesCategoriesList.add(0, new PlacesCategories("Hôpitaux et cliniques", "hospital","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fhospital.png?alt=media&token=ab3c098f-3467-45ee-b761-1507c50440f3"));
+        placesCategoriesList.add(1, new PlacesCategories("Médecins", "doctor","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fdoctor3.png?alt=media&token=dbdae35c-698b-465d-9d04-a7b20feb17c0"));
+        placesCategoriesList.add(2, new PlacesCategories("Pharmaciens", "pharmacy","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fdoctor3.png?alt=media&token=dbdae35c-698b-465d-9d04-a7b20feb17c0"));
+        placesCategoriesList.add(3, new PlacesCategories("Dentists", "dentist","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fdoctor3.png?alt=media&token=dbdae35c-698b-465d-9d04-a7b20feb17c0"));
+        placesCategoriesList.add(4, new PlacesCategories("Restaurants", "restaurant","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fresturant.png?alt=media&token=8d64d944-b55f-4036-acd5-cf4bdefb5d78"));
+        placesCategoriesList.add(5, new PlacesCategories("Cafeterias", "cafe", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fresturant.png?alt=media&token=8d64d944-b55f-4036-acd5-cf4bdefb5d78"));
+        placesCategoriesList.add(6, new PlacesCategories("Parkings", "parking","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
+        placesCategoriesList.add(7, new PlacesCategories("Stations service", "gas_station","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
+        placesCategoriesList.add(8, new PlacesCategories("Stations Taxi", "taxi_stand","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Ftaxi.png?alt=media&token=e5c84dc2-70a5-48fd-8e8b-99edfe0f36fa"));
+        placesCategoriesList.add(9, new PlacesCategories("Magazines", "store", "https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
+        placesCategoriesList.add(10, new PlacesCategories("Banques", "bank","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
+        placesCategoriesList.add(11, new PlacesCategories("Administrations", "local_government_office","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
+        placesCategoriesList.add(12, new PlacesCategories("Ecoles", "school","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
+        placesCategoriesList.add(13, new PlacesCategories("Universités", "university","https://firebasestorage.googleapis.com/v0/b/around-672b4.appspot.com/o/markers-icons%2Fagency.png?alt=media&token=74378db7-f7e6-497f-a3e4-a5e52129c09e"));
     }
 
     //region build google ads
@@ -530,7 +530,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         });
 
         reinitFullScreenAd();
-//        generateToast();
+        generateToast();
     }
 
     void generateToast() {
@@ -749,10 +749,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                     PlacesCategories category = placesCategoriesList.get((int) drawerItem.getIdentifier() - 50);
                                     if (mCurrentLocation!=null) {
                                         firstMarker = true;
-                                        PerformGetPlaces(category.getFr_name(), category.getIcon(),String.valueOf(mCurrentLocation.getLatitude()),
+                                        PerformGetPlaces(category.getApi_name(), category.getIcon(),String.valueOf(mCurrentLocation.getLatitude()),
                                                 String.valueOf(mCurrentLocation.getLongitude()), true);
                                     }
-                                    currentCategory = category.getFr_name();
+                                    currentCategory = category.getApi_name();
                                     currentIcon = category.getIcon();
                                 }
 
@@ -973,7 +973,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     if (response.body().getResults().size() == 0) {
                         if (mProgressDialog.isShowing())
                             mProgressDialog.dismiss();
-                        myLocationFabClicked();
+                        moveCameraToGooglePlaces(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()));
                         showSnackbar(R.string.no_places);
                         return;
                     }
@@ -987,7 +987,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         mGooglePlaceList.put(key,response.body().getResults().get(i));
                         addPlacesMarker(Icon, latLng);
                         if (fromMenue) {
-                            myLocationFabClicked();
+                            moveCameraToGooglePlaces(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()));
                         }
 //                    Log.e("currentLocation name ", response.body().getResults().get(i).getName());
 //                    Log.e("currentLocation ratin ", String.valueOf(response.body().getResults().get(i).getRating()));
@@ -1003,7 +1003,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     if (fromMenue) {
                         if (mCurrentLocation != null) {
                             LatLng mlatLng = new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude());
-                            moveCameraToMyPosition(mlatLng);
+                            moveCameraToGooglePlaces(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()));
                         }
                     }
                     if (mProgressDialog.isShowing())
@@ -1059,13 +1059,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (mCurrentUser != null) {
             if (!mCurrentUser.isAnonymous()) {//user is signed in but before add place need to verify his email
                 SecondaryDrawerItem logOutItem = new SecondaryDrawerItem().withIdentifier(-3)
-                        .withName(R.string.action_log_out).withIcon(GoogleMaterial.Icon.gmd_exit_to_app);
+                        .withName(R.string.action_log_out).withIcon(getDrawable(R.drawable.ic_exit_to_app_black_24dp));
                 mLeftDrawer.addItem(logOutItem);
             }
         }
 
         SecondaryDrawerItem aboutItem = new SecondaryDrawerItem().withIdentifier(-2)
-                .withName("A propos").withIcon(GoogleMaterial.Icon.gmd_info);
+                .withName(R.string.about_app).withIcon(getDrawable(R.drawable.ic_info_black_24dp));
         mLeftDrawer.addItem(aboutItem);
     }
 
@@ -1312,6 +1312,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     /**
+     * move map camera to selected position
+     *
+     * @param latLng
+     */
+    private void moveCameraToGooglePlaces(LatLng latLng) {
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(latLng)      // Sets the center of the map to Mountain View
+                .zoom(12)                   // Sets the zoom
+                .bearing(90)                // Sets the orientation of the camera to east
+                .tilt(30)                   // Sets the tilt of the camera to 30 degrees
+                .build();                   // Creates a CameraPosition from the builder
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+    }
+
+    /**
      * move map camera to default position
      */
     private void resetMapCamera() {
@@ -1405,8 +1420,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 if (location != null) {
                     mCurrentLocation = location;
                     //change fab icon
-                    mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_my_location)
-                            .color(getResources().getColor(R.color.white)).sizeDp(24));
+                    mMyLocationFab.setImageDrawable(getDrawable(R.drawable.ic_my_location_black_24dp));
                     mPlacesHereFab.setImageDrawable(getDrawable(R.drawable.ic_pin_drop_black_24dp));
                 } else {
                     mCurrentLocation = getLastKnownLocation();
@@ -1436,6 +1450,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         googlePlaceDetails[1] = String.valueOf(result.getRating());
                         googlePlaceDetails[2] = String.valueOf(detailsResult.getFormattedAddress());
                         googlePlaceDetails[3] = String.valueOf(detailsResult.getInternationalPhoneNumber());
+                        googlePlaceDetails[4] = String.valueOf(result.getGeometry().getLocation().getLat());
+                        googlePlaceDetails[5] = String.valueOf(result.getGeometry().getLocation().getLng());
                         startActivity(new Intent(MainActivity.this, GooglePlacesDetails.class)
                                 .putExtra("extra_place", googlePlaceDetails));
                     }
@@ -1515,8 +1531,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
         if (bestLocation == null) {
             mCurrentLocation = null;
-            mMyLocationFab.setImageDrawable(new IconicsDrawable(MainActivity.this, GoogleMaterial.Icon.gmd_gps_off)
-                    .color(Color.WHITE).sizeDp(24));
+            mMyLocationFab.setImageDrawable(getDrawable(R.drawable.ic_location_disabled_black_24dp));
             mPlacesHereFab.setImageDrawable(getDrawable(R.drawable.ic_pin_drop_black_24dp));
         }
         return bestLocation;

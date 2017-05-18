@@ -113,14 +113,14 @@
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBoNomMFZovBlV8-V2LQgR7MyD4TNtFCJI</string>
     <string name="error_mail">Email non fourni</string>
     <string name="about">A propos</string>
-    <string name="exit">Exit</string>
-    <string name="exit_warnning">Are you sure you want to exit</string>
+    <string name="exit">Déconnecter</string>
+    <string name="exit_warnning">Etes-vous sûr de vous déconnecter</string>
     <string name="delete">yes</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
-    <string name="add_Bussines">AddBussines</string>
-    <string name="add_business">Add Business</string>
-    <string name="add_business_warnning">Would you like to add new place?</string>
+    <string name="add_Bussines">Ajouteractivité/announce</string>
+    <string name="add_business">Ajouteractivité/announce</string>
+    <string name="add_business_warnning">Ajouter un nouvel activité/announce?</string>
 
     <string name="ad_mob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="ad_mob_full_screen_id">ca-app-pub-0243484158988577/9196272994</string>
@@ -130,12 +130,13 @@
     <string name="ad_mob_real_full_screen_id">ca-app-pub-1670144099232554/5719984023</string>
     <string name="ad_mob_real_id">ca-app-pub-1670144099232554~4403628425</string>
 
-    <string name="choose_category">Choose Category</string>
-    <string name="title_activity_google_places_details">GooglePlacesDetails</string>
-    <string name="location_here">Get Places Here</string>
-    <string name="choose_places">Choose Places</string>
-    <string name="google_map_places">Google map places</string>
-    <string name="app_places">App Places</string>
-    <string name="choose">Choose</string>
+    <string name="choose_category">Choisir Categorie</string>
+    <string name="title_activity_google_places_details">Details d\'Emplacement</string>
+    <string name="location_here">Resultats ici</string>
+    <string name="choose_places">Choisir source d\'information</string>
+    <string name="google_map_places">Positions Google </string>
+    <string name="app_places">Positions NAVIGUER </string>
+    <string name="choose">Choisir</string>
+    <string name="about_app">A propos</string>
 
 </resources>

@@ -107,7 +107,11 @@ public class ConversionActivity extends AppCompatActivity {
         getFeedsFromServer();
 
         //check if user online
-        checkUserOnline();
+        try {
+            checkUserOnline();
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
 
         mDelayHandler = new Handler();
     }

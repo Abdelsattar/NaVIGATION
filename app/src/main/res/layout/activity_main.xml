@@ -88,6 +88,7 @@
                 android:layout_toEndOf="@+id/add_business_warnning"
                 android:layout_toRightOf="@+id/add_business_warnning"
                 android:clickable="true"
+                android:textSize="6.2pt"
                 android:text="@string/add_business"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/colorAccent"

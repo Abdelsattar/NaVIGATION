@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\43d61e499f0fb0652a71d0da2dbca9a95b5858b5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_8bf8679d55c590a526e218a62c6779150494e876.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\4da62bd0523bb5f183fe7ac4618855f48620a76e\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -29,22 +20,22 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_aeef17f7aaac5afe4692121fa160ffee677f68ec.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\c75d086dbf93f1f46bc0d8f1c0fd2654ded4bdbb\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.1"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_8daf543b57f947bac90c10cec07f551e4f49a0f2.jar" />
+        revision="25.0.3"
+        sha1="31c1fe8583cbb7f6a9f11bb7010a747e79712335">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c7bb5e61a2863c0d35b676cb45386b99c95c5b5\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\239cd967aa071a760a49f42e991e657bd60dc13a\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\3c7b85dc782ce2741f794a9dc4f18a237d1180ac\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="1d193729baf37df3d902a423291423a0df7e3779">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_885d451bf1e8c0c3339d0ee6c90341c9ae4c2189.jar" />
+        revision="25.0.3"
+        sha1="3a1bac2cc31df44dbf1f9bbf2c675319503c9271">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ce9f081db9bae9778d6f429bd94997bdf04e01bc\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -54,6 +45,15 @@
         revision="25.0.2"
         sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_546c397685de5c594029906664f8f8930aadaea6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\a6cf8ae980abaec04d9c1d0f3e95f09c8d66df5e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d3f8ab57967a9149262ad36a46477fc2515f6ac8">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bf9d7c66349a794d3049e895b382e1b199f0141b\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -66,75 +66,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.7\69d90fd7fb70e54746e26c10454c220e40a775ce\otto-1.3.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="69d90fd7fb70e54746e26c10454c220e40a775ce">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\otto-1.3.7_fb9bcf5eec37eb72196cce9e1b14b2ab99fc3be5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\dcbb196c8824b4dac3cbfbe543770503b38db2db\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_a13757fffae30d2410bb889337a250d64494c252.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\c75d086dbf93f1f46bc0d8f1c0fd2654ded4bdbb\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="31c1fe8583cbb7f6a9f11bb7010a747e79712335">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6c7bb5e61a2863c0d35b676cb45386b99c95c5b5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\3548f9e17ea956e5183d840e39f9db0f91dc2214\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="144ed77fb6eb4f54d1484b4e52f5cbd38c817e4a">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6f9793ebf7cce7c0f7b46ea180f58d6548f268e9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\1ce57a9ee878848f427b132fc0acb85e5018f893\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_cdef0a9bb7a5c21bf63a6f4c9c161a3e659e7a4e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f7ad475fe8bbfc543c742d06e9139754abb48e62\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="9f910ce4152cf5b205ee2630dc2e12d2803e1e63">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_9af7935760bcc1c9698f25c51f41db8fbaae7850.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\1.1.6\2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5\parceler-api-1.1.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\parceler-api-1.1.6_35a1bbdde53e4769365e3a989f1ace74923bfcaa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\5585db88d60b51f2fde406df66e14211299c35e9\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_27d4995dcc1f2712306603ed925652414a5ef970.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,66 +102,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\0c0ca47268c9321bf9c44dd64fd638bfe0cdc71b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ca00ecc6cc370e21998206d0fa2cf2b53598bd87.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\65e7fd4eeebb65028f1ae4a16a26c6c942315875\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6b3b492612cb543fe92e463d58c46f6187e8723b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\013d323a905ec89243f69d85723f6f18b0d1a10d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_95a8358535680abfb4f974c32e9803092523f450.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\27838f1ce39c80ce6d851f83dac138702fdd8454\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_e8378278093b08f44ae2cb550c95dac39e0c9b89.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\d41584b218b95ebd99bb413eeb8dfee94832dc7a\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="1828dd75d357690efb2c5f4326804e2f7ad21f6c">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_1ecc7b2f9eef19074df6e7fc39138ef1c6d2cc7a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\glide-3.6.1_fbcc57a08f4fafa8852a7d379ab3af9f5f2e769a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\448786324a37d5dce0b8b0c58e0a5dbdbabf2299\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="84c98924eff3106f306c3e233cc2e6d84744f518">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_715301813e4d1b1dd62bc57fee4b9ca8c2d9c3fc.jar" />
     </item>
     <item
         is-multidex="false"
@@ -237,51 +120,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\1e7e874b38bd85a7366071e8a224eea8ff48ba1c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_c52f583e27b9d115f9e734c1a5ab7b41deaee499.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_a4b5000a8f18d26c4dabc2e54b0725b34373ba9f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\5646a6567d3dd2dbbe7a2970d7a2a7f9ba4214df\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_47bb5e05dc1d82ae7f37984d9e109e1268deaed3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\4768e827300e766ae94aa84d824d1e2f6e74689e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_cfd2a8ddfd43b033de29b392494b69c041ee8c9c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\2f701bcb8b409a979f5940bf80e56a884e4d5313\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_53bcb01c8cf617fa4c0c2c5e7e6c8e795cb8eaa9.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
         jumboMode="true"
         optimize="true"
@@ -291,21 +129,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\b30ae7e898f25e8276a5f972b2fb6f1f30f12ee5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6275e0b55a274d093828230b5544df64988f9369.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\7bc048ebc60ae54a851fc238f16f37c047ab6734\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_30cb78f47dc20cbc96764e466c97dcbe5c0b63e4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\83b9983aefb9fc22358eaa8d5a55237bf5ff04cd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cefd0c13abe1dc09277624ca6a42272931896d37\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -327,15 +165,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_b8dcd91ce6191061aba1dcb83e17589f7bfe6537.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\f6b48145a1dbdfcfe88bdb6b74b80843bd53eb17\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -344,13 +173,22 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_b7b4679afaefc0b3cea4d4d33f3a9aee1d8ed51c.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\06583228eebdf3742ed7cc3d826d16a0890768de\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\695a99b899304fbd3be9711443e80d727487cb03\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_54c848bd73ab2f84f86d75ff00058969249b6e73.jar" />
+        sha1="8f635f53387085220f02014589f50b14d6efb3ec">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_39406fe5305989ca584e66e8194ab2723fadface\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.9.0_1a5e31a563bc1ac6038e236c08d1220e0fda6768\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -371,13 +209,22 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_61ed816f4442b3cf4a918c916a8eaa566ab83209.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\5646a6567d3dd2dbbe7a2970d7a2a7f9ba4214df\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\13d8e20104ecd76da1fd1593b62e8ffd1b8b2b00\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_47bb5e05dc1d82ae7f37984d9e109e1268deaed3.jar" />
+        revision="25.0.3"
+        sha1="461cd433c2723981c7536d60acfcf3d86f3105fb">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_765062263b7dc2f8ef88a3534d44ecb5c6cdcfb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\0c0ca47268c9321bf9c44dd64fd638bfe0cdc71b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ca00ecc6cc370e21998206d0fa2cf2b53598bd87\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -396,24 +243,6 @@
         revision="25.0.1"
         sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_51a789532881482475f72aaae124db11679f982b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\3548f9e17ea956e5183d840e39f9db0f91dc2214\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="144ed77fb6eb4f54d1484b4e52f5cbd38c817e4a">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6f9793ebf7cce7c0f7b46ea180f58d6548f268e9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\5585db88d60b51f2fde406df66e14211299c35e9\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_27d4995dcc1f2712306603ed925652414a5ef970.jar" />
     </item>
     <item
         is-multidex="false"
@@ -462,39 +291,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\848010053ade3a7c8965b6cde491e979bd51f414\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_f48cd70b89d1e997733ad4ae01ddcded4f13bcff.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\7bc048ebc60ae54a851fc238f16f37c047ab6734\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_30cb78f47dc20cbc96764e466c97dcbe5c0b63e4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\7c68477fad7241eaf35be9065a1f811e1b8970c6\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_13f08e8dce09a68a4282596048288463636c98d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f2e811c8f260eb316ee0b4a50801039c0ee48191\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ef7ae67db896c98500f3ccd3e6a5503006b04429.jar" />
     </item>
     <item
         is-multidex="false"
@@ -515,40 +317,22 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_546c397685de5c594029906664f8f8930aadaea6.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\5e9481a3678459d27f742eebf0377d0b7b0793bb\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\7bc048ebc60ae54a851fc238f16f37c047ab6734\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_7a9b0e95c0e72fb1fcbd1d75e5ff10f317886137.jar" />
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_30cb78f47dc20cbc96764e466c97dcbe5c0b63e4\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\8bff0ff3313d5dde054dd24b0d889423e7a40908\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_5642076dbabfedfee939511f02a9c7ff54da7f9e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\2f701bcb8b409a979f5940bf80e56a884e4d5313\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_53bcb01c8cf617fa4c0c2c5e7e6c8e795cb8eaa9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\d65a3de4206d86c961c7ec897ee0fc3df8d539fa\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\4b65ba1c8bfd62e673d0a963e2969f3626598c62\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="7118aee70be2579da7bc488325e2c2ba9f668514">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_64d2cf4413f73ba6be4f57b30ce4cdd483189351.jar" />
+        sha1="e0891a69f24747a6988698a57fd55825b31251fa">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dee65a36b0d25a309cec970297de4042e1b51986\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -560,49 +344,40 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\otto-1.3.7_fb9bcf5eec37eb72196cce9e1b14b2ab99fc3be5.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\fa22f06744d6063a8910802bac8f431160a182a6\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\674b88973f695980f19b16b5b577bd17f7c0cce5\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_07fc9c2dd4299fa50ffb3ebda79a73d5804d1935.jar" />
+        sha1="e4c4c6db6020ed19f773bfe4e6d45662a1780489">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_809fe5e81ecacb101a8668b2330422479a22978e\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\okio-1.9.0_1a5e31a563bc1ac6038e236c08d1220e0fda6768.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_b8dcd91ce6191061aba1dcb83e17589f7bfe6537.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\239cd967aa071a760a49f42e991e657bd60dc13a\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\dcbb196c8824b4dac3cbfbe543770503b38db2db\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="1d193729baf37df3d902a423291423a0df7e3779">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_885d451bf1e8c0c3339d0ee6c90341c9ae4c2189.jar" />
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a13757fffae30d2410bb889337a250d64494c252\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\14869d6f204a1536d22b7d5b7176d4b9f2de1413\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5646a6567d3dd2dbbe7a2970d7a2a7f9ba4214df\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_61ed816f4442b3cf4a918c916a8eaa566ab83209.jar" />
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_47bb5e05dc1d82ae7f37984d9e109e1268deaed3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\3548f9e17ea956e5183d840e39f9db0f91dc2214\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="144ed77fb6eb4f54d1484b4e52f5cbd38c817e4a">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6f9793ebf7cce7c0f7b46ea180f58d6548f268e9\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -615,30 +390,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\43d61e499f0fb0652a71d0da2dbca9a95b5858b5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_8bf8679d55c590a526e218a62c6779150494e876.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\13d8e20104ecd76da1fd1593b62e8ffd1b8b2b00\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="461cd433c2723981c7536d60acfcf3d86f3105fb">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_765062263b7dc2f8ef88a3534d44ecb5c6cdcfb0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\7c68477fad7241eaf35be9065a1f811e1b8970c6\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_13f08e8dce09a68a4282596048288463636c98d8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -677,31 +434,31 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_47bb5e05dc1d82ae7f37984d9e109e1268deaed3.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\bf78466b0f1e931f682b9e978e7eb8baa8a3abed\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\43d61e499f0fb0652a71d0da2dbca9a95b5858b5\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_0bb461cbedb51c519440dcddda23f10b7dad2ff1.jar" />
+        revision="25.0.3"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8bf8679d55c590a526e218a62c6779150494e876\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f8626ef3d57f76b3a0f38459fb779c30d9a844fb\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f7ad475fe8bbfc543c742d06e9139754abb48e62\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_d5af701e5412e07e0e1704df58a2393e3cc176e3.jar" />
+        revision="25.0.3"
+        sha1="9f910ce4152cf5b205ee2630dc2e12d2803e1e63">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9af7935760bcc1c9698f25c51f41db8fbaae7850\classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
+        revision="25.0.3"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_8daf543b57f947bac90c10cec07f551e4f49a0f2.jar" />
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_8daf543b57f947bac90c10cec07f551e4f49a0f2\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -713,40 +470,22 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_aeef17f7aaac5afe4692121fa160ffee677f68ec.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\d65a3de4206d86c961c7ec897ee0fc3df8d539fa\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\4da62bd0523bb5f183fe7ac4618855f48620a76e\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="7118aee70be2579da7bc488325e2c2ba9f668514">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_64d2cf4413f73ba6be4f57b30ce4cdd483189351.jar" />
+        revision="25.0.3"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aeef17f7aaac5afe4692121fa160ffee677f68ec\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\8bff0ff3313d5dde054dd24b0d889423e7a40908\output\jars\classes.jar"
+        is-multidex="true"
+        jar="D:\Android\Apps\NaVIGATION\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.1"
-        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_5642076dbabfedfee939511f02a9c7ff54da7f9e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\27838f1ce39c80ce6d851f83dac138702fdd8454\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_e8378278093b08f44ae2cb550c95dac39e0c9b89.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\5e9481a3678459d27f742eebf0377d0b7b0793bb\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_7a9b0e95c0e72fb1fcbd1d75e5ff10f317886137.jar" />
+        revision="25.0.3"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ee926357cbdda84fab4b465c0b36097ced6e8d81\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -759,24 +498,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\2ad88d4105be4e10f52b430aee11c9eb61d8fdb0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_f816e7ed05422c4c3d7ced14d794f54b9d141011.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.7\69d90fd7fb70e54746e26c10454c220e40a775ce\otto-1.3.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="69d90fd7fb70e54746e26c10454c220e40a775ce">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\otto-1.3.7_fb9bcf5eec37eb72196cce9e1b14b2ab99fc3be5.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\013d323a905ec89243f69d85723f6f18b0d1a10d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -785,31 +506,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_95a8358535680abfb4f974c32e9803092523f450.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\24b66b1625cba589bca64faa7b91e256bfd8025c\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\013d323a905ec89243f69d85723f6f18b0d1a10d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="0c3529d9491be892952749d252ae1defa9b1f937">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_81a4e644454972343c1be968631b6093de0583d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f2e811c8f260eb316ee0b4a50801039c0ee48191\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ef7ae67db896c98500f3ccd3e6a5503006b04429.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\eec97dca4d02cc145f029b6792e729036e4291ec\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c83fbde55c05bc186002d7ce3570d619c3d6ee1f">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_760a58cd12b287c21288cbe7b08642d393dabf46.jar" />
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_95a8358535680abfb4f974c32e9803092523f450\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -819,15 +522,6 @@
         revision="25.0.3"
         sha1="144ed77fb6eb4f54d1484b4e52f5cbd38c817e4a">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6f9793ebf7cce7c0f7b46ea180f58d6548f268e9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\c75d086dbf93f1f46bc0d8f1c0fd2654ded4bdbb\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="31c1fe8583cbb7f6a9f11bb7010a747e79712335">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6c7bb5e61a2863c0d35b676cb45386b99c95c5b5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -848,40 +542,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_30cb78f47dc20cbc96764e466c97dcbe5c0b63e4.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\1e7e874b38bd85a7366071e8a224eea8ff48ba1c\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\7c68477fad7241eaf35be9065a1f811e1b8970c6\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_c52f583e27b9d115f9e734c1a5ab7b41deaee499.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\ab0a20c92f9fb6fc3d2398eae27062a5707f9c12\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_70d6aa4ba70c0e5e5e939483877b39b3ec75c512.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\c0a873fb9a9bd38d203477c96c00f354ad14bb5b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_dab7ff056e4f0f2d984b96304f6ea8cac9cbf4c5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\448786324a37d5dce0b8b0c58e0a5dbdbabf2299\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="84c98924eff3106f306c3e233cc2e6d84744f518">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_715301813e4d1b1dd62bc57fee4b9ca8c2d9c3fc.jar" />
+        revision="25.0.3"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_13f08e8dce09a68a4282596048288463636c98d8\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -939,39 +606,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\93232fa02de4b5c70de8a6a60f92d44aabd3bf5b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_2f1020a9f466a2d8c78f04d606f95b7263c86de1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\27838f1ce39c80ce6d851f83dac138702fdd8454\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_e8378278093b08f44ae2cb550c95dac39e0c9b89.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\209a0c6e85c331ca14792b8d8f7d3b6f77c6a6b2\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_51a789532881482475f72aaae124db11679f982b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\138fb76ff0302669df45f006f9087bcde8bd0c24\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_3568f6d1271b424b67255b6e3ffefaead9bd1b73.jar" />
     </item>
     <item
         is-multidex="false"
@@ -984,15 +624,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\2f61640cc935e6e005764910e0679829b46da19c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_98f013c22f94bac28af7f02bcb6daceff002da40.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\24b66b1625cba589bca64faa7b91e256bfd8025c\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -1001,49 +632,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_81a4e644454972343c1be968631b6093de0583d2.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\b34c07060e4c55168fd04abd21118aa8511bfd23\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_a4b5000a8f18d26c4dabc2e54b0725b34373ba9f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\okio-1.9.0_1a5e31a563bc1ac6038e236c08d1220e0fda6768.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\013d323a905ec89243f69d85723f6f18b0d1a10d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_95a8358535680abfb4f974c32e9803092523f450.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\9405648cf074d2b81fefcda0d6533d8c81df80e8\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_96b8d9b5015d43c5c81121b8db91e211801e553f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\4da62bd0523bb5f183fe7ac4618855f48620a76e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_aeef17f7aaac5afe4692121fa160ffee677f68ec.jar" />
+        sha1="1d8a3cef611578892f5e00a85dc8520062fbe005">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9dc039a2392d96a4d8494d9f0217df9a2f581c37\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -1055,40 +650,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\parceler-api-1.1.6_35a1bbdde53e4769365e3a989f1ace74923bfcaa.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\8bff0ff3313d5dde054dd24b0d889423e7a40908\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\1.1.6\2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5\parceler-api-1.1.6.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_5642076dbabfedfee939511f02a9c7ff54da7f9e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\retrofit-2.0.2_f102c29dd81190ee70e5a083a0900c894fa335a0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f2e811c8f260eb316ee0b4a50801039c0ee48191\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ef7ae67db896c98500f3ccd3e6a5503006b04429.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f7ad475fe8bbfc543c742d06e9139754abb48e62\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9f910ce4152cf5b205ee2630dc2e12d2803e1e63">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_9af7935760bcc1c9698f25c51f41db8fbaae7850.jar" />
+        sha1="2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\parceler-api-1.1.6_35a1bbdde53e4769365e3a989f1ace74923bfcaa\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -1128,6 +696,951 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\4b65ba1c8bfd62e673d0a963e2969f3626598c62\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e0891a69f24747a6988698a57fd55825b31251fa">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_dee65a36b0d25a309cec970297de4042e1b51986.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.6.1_fbcc57a08f4fafa8852a7d379ab3af9f5f2e769a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\49b88d59c725141b30efdb864556d045517ad52a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4851fd8f185cfe7e50d4c5ae6323ed622ad28e74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\06583228eebdf3742ed7cc3d826d16a0890768de\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_54c848bd73ab2f84f86d75ff00058969249b6e73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\d41584b218b95ebd99bb413eeb8dfee94832dc7a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1828dd75d357690efb2c5f4326804e2f7ad21f6c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1ecc7b2f9eef19074df6e7fc39138ef1c6d2cc7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\1.1.6\2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5\parceler-api-1.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\parceler-api-1.1.6_35a1bbdde53e4769365e3a989f1ace74923bfcaa.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f6b48145a1dbdfcfe88bdb6b74b80843bd53eb17\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b7b4679afaefc0b3cea4d4d33f3a9aee1d8ed51c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f6b48145a1dbdfcfe88bdb6b74b80843bd53eb17\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_b7b4679afaefc0b3cea4d4d33f3a9aee1d8ed51c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\674b88973f695980f19b16b5b577bd17f7c0cce5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e4c4c6db6020ed19f773bfe4e6d45662a1780489">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_809fe5e81ecacb101a8668b2330422479a22978e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\d41584b218b95ebd99bb413eeb8dfee94832dc7a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1828dd75d357690efb2c5f4326804e2f7ad21f6c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_1ecc7b2f9eef19074df6e7fc39138ef1c6d2cc7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\49b88d59c725141b30efdb864556d045517ad52a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_4851fd8f185cfe7e50d4c5ae6323ed622ad28e74.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.6.1_46fe48c0e76052ac24591cc95c5777d30889ed3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\gson-2.6.1_46fe48c0e76052ac24591cc95c5777d30889ed3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\cdb177e041639599e5e08e020dacf5e6d0ed022f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_546c397685de5c594029906664f8f8930aadaea6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f6b48145a1dbdfcfe88bdb6b74b80843bd53eb17\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_b7b4679afaefc0b3cea4d4d33f3a9aee1d8ed51c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\4b65ba1c8bfd62e673d0a963e2969f3626598c62\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e0891a69f24747a6988698a57fd55825b31251fa">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_dee65a36b0d25a309cec970297de4042e1b51986.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.4.1_8124dbe366d935f74ed856f616b6f996d6b7476f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\06583228eebdf3742ed7cc3d826d16a0890768de\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_54c848bd73ab2f84f86d75ff00058969249b6e73.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\cdb177e041639599e5e08e020dacf5e6d0ed022f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_546c397685de5c594029906664f8f8930aadaea6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_8124dbe366d935f74ed856f616b6f996d6b7476f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\209a0c6e85c331ca14792b8d8f7d3b6f77c6a6b2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_51a789532881482475f72aaae124db11679f982b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\49b88d59c725141b30efdb864556d045517ad52a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_4851fd8f185cfe7e50d4c5ae6323ed622ad28e74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\b34c07060e4c55168fd04abd21118aa8511bfd23\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1d8a3cef611578892f5e00a85dc8520062fbe005">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_9dc039a2392d96a4d8494d9f0217df9a2f581c37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\gson-2.6.1_46fe48c0e76052ac24591cc95c5777d30889ed3a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\209a0c6e85c331ca14792b8d8f7d3b6f77c6a6b2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_51a789532881482475f72aaae124db11679f982b\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\glide-3.6.1_fbcc57a08f4fafa8852a7d379ab3af9f5f2e769a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5585db88d60b51f2fde406df66e14211299c35e9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_27d4995dcc1f2712306603ed925652414a5ef970.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.7\69d90fd7fb70e54746e26c10454c220e40a775ce\otto-1.3.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69d90fd7fb70e54746e26c10454c220e40a775ce">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\otto-1.3.7_fb9bcf5eec37eb72196cce9e1b14b2ab99fc3be5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\43d61e499f0fb0652a71d0da2dbca9a95b5858b5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_8bf8679d55c590a526e218a62c6779150494e876.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_8daf543b57f947bac90c10cec07f551e4f49a0f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\239cd967aa071a760a49f42e991e657bd60dc13a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_885d451bf1e8c0c3339d0ee6c90341c9ae4c2189.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.7\69d90fd7fb70e54746e26c10454c220e40a775ce\otto-1.3.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69d90fd7fb70e54746e26c10454c220e40a775ce">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\otto-1.3.7_fb9bcf5eec37eb72196cce9e1b14b2ab99fc3be5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\dcbb196c8824b4dac3cbfbe543770503b38db2db\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_a13757fffae30d2410bb889337a250d64494c252.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\3548f9e17ea956e5183d840e39f9db0f91dc2214\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="144ed77fb6eb4f54d1484b4e52f5cbd38c817e4a">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6f9793ebf7cce7c0f7b46ea180f58d6548f268e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\1ce57a9ee878848f427b132fc0acb85e5018f893\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_cdef0a9bb7a5c21bf63a6f4c9c161a3e659e7a4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f7ad475fe8bbfc543c742d06e9139754abb48e62\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9f910ce4152cf5b205ee2630dc2e12d2803e1e63">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_9af7935760bcc1c9698f25c51f41db8fbaae7850.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\1.1.6\2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5\parceler-api-1.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\parceler-api-1.1.6_35a1bbdde53e4769365e3a989f1ace74923bfcaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5585db88d60b51f2fde406df66e14211299c35e9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_27d4995dcc1f2712306603ed925652414a5ef970.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\0c0ca47268c9321bf9c44dd64fd638bfe0cdc71b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ca00ecc6cc370e21998206d0fa2cf2b53598bd87.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\fa22f06744d6063a8910802bac8f431160a182a6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_07fc9c2dd4299fa50ffb3ebda79a73d5804d1935\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\013d323a905ec89243f69d85723f6f18b0d1a10d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_95a8358535680abfb4f974c32e9803092523f450.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\27838f1ce39c80ce6d851f83dac138702fdd8454\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_e8378278093b08f44ae2cb550c95dac39e0c9b89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\glide-3.6.1_fbcc57a08f4fafa8852a7d379ab3af9f5f2e769a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\448786324a37d5dce0b8b0c58e0a5dbdbabf2299\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="84c98924eff3106f306c3e233cc2e6d84744f518">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_715301813e4d1b1dd62bc57fee4b9ca8c2d9c3fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\1e7e874b38bd85a7366071e8a224eea8ff48ba1c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_c52f583e27b9d115f9e734c1a5ab7b41deaee499.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_a4b5000a8f18d26c4dabc2e54b0725b34373ba9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5646a6567d3dd2dbbe7a2970d7a2a7f9ba4214df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_47bb5e05dc1d82ae7f37984d9e109e1268deaed3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\2f701bcb8b409a979f5940bf80e56a884e4d5313\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_53bcb01c8cf617fa4c0c2c5e7e6c8e795cb8eaa9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\2f701bcb8b409a979f5940bf80e56a884e4d5313\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_53bcb01c8cf617fa4c0c2c5e7e6c8e795cb8eaa9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_b8dcd91ce6191061aba1dcb83e17589f7bfe6537\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_b8dcd91ce6191061aba1dcb83e17589f7bfe6537.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\06583228eebdf3742ed7cc3d826d16a0890768de\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_54c848bd73ab2f84f86d75ff00058969249b6e73.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Apps\NaVIGATION\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4d3bc13bc615b20e4bca262bfbfdd413e901aed3">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_53e50938d6c2726bafccc9243718f8796390682f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5585db88d60b51f2fde406df66e14211299c35e9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_27d4995dcc1f2712306603ed925652414a5ef970\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5646a6567d3dd2dbbe7a2970d7a2a7f9ba4214df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_47bb5e05dc1d82ae7f37984d9e109e1268deaed3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\7c18ef3ba7393e3f7a6b087d1628a92e3566b568\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_745e28bc5388980c39fc80b3841066fba05c519f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\3548f9e17ea956e5183d840e39f9db0f91dc2214\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="144ed77fb6eb4f54d1484b4e52f5cbd38c817e4a">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6f9793ebf7cce7c0f7b46ea180f58d6548f268e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5585db88d60b51f2fde406df66e14211299c35e9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_27d4995dcc1f2712306603ed925652414a5ef970.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\7c68477fad7241eaf35be9065a1f811e1b8970c6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_13f08e8dce09a68a4282596048288463636c98d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f2e811c8f260eb316ee0b4a50801039c0ee48191\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ef7ae67db896c98500f3ccd3e6a5503006b04429.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5e9481a3678459d27f742eebf0377d0b7b0793bb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_7a9b0e95c0e72fb1fcbd1d75e5ff10f317886137.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\8bff0ff3313d5dde054dd24b0d889423e7a40908\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_5642076dbabfedfee939511f02a9c7ff54da7f9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\2f701bcb8b409a979f5940bf80e56a884e4d5313\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_53bcb01c8cf617fa4c0c2c5e7e6c8e795cb8eaa9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\d65a3de4206d86c961c7ec897ee0fc3df8d539fa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7118aee70be2579da7bc488325e2c2ba9f668514">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_64d2cf4413f73ba6be4f57b30ce4cdd483189351.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f2e811c8f260eb316ee0b4a50801039c0ee48191\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ef7ae67db896c98500f3ccd3e6a5503006b04429\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\fa22f06744d6063a8910802bac8f431160a182a6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_07fc9c2dd4299fa50ffb3ebda79a73d5804d1935.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\okio-1.9.0_1a5e31a563bc1ac6038e236c08d1220e0fda6768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_b8dcd91ce6191061aba1dcb83e17589f7bfe6537.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\239cd967aa071a760a49f42e991e657bd60dc13a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_885d451bf1e8c0c3339d0ee6c90341c9ae4c2189.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\14869d6f204a1536d22b7d5b7176d4b9f2de1413\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_61ed816f4442b3cf4a918c916a8eaa566ab83209.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\239cd967aa071a760a49f42e991e657bd60dc13a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_885d451bf1e8c0c3339d0ee6c90341c9ae4c2189\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\d65a3de4206d86c961c7ec897ee0fc3df8d539fa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7118aee70be2579da7bc488325e2c2ba9f668514">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_64d2cf4413f73ba6be4f57b30ce4cdd483189351\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5e9481a3678459d27f742eebf0377d0b7b0793bb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7a9b0e95c0e72fb1fcbd1d75e5ff10f317886137\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\43d61e499f0fb0652a71d0da2dbca9a95b5858b5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_8bf8679d55c590a526e218a62c6779150494e876.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\7c68477fad7241eaf35be9065a1f811e1b8970c6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_13f08e8dce09a68a4282596048288463636c98d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_8daf543b57f947bac90c10cec07f551e4f49a0f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\d65a3de4206d86c961c7ec897ee0fc3df8d539fa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7118aee70be2579da7bc488325e2c2ba9f668514">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_64d2cf4413f73ba6be4f57b30ce4cdd483189351.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\41c7e71a53d68587d26443abea7b87046aab692f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_63bb50dc481d148c7dce1bd25ea5383fc00fbe22\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\8bff0ff3313d5dde054dd24b0d889423e7a40908\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_5642076dbabfedfee939511f02a9c7ff54da7f9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\27838f1ce39c80ce6d851f83dac138702fdd8454\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_e8378278093b08f44ae2cb550c95dac39e0c9b89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\5e9481a3678459d27f742eebf0377d0b7b0793bb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_7a9b0e95c0e72fb1fcbd1d75e5ff10f317886137.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.7\69d90fd7fb70e54746e26c10454c220e40a775ce\otto-1.3.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69d90fd7fb70e54746e26c10454c220e40a775ce">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\otto-1.3.7_fb9bcf5eec37eb72196cce9e1b14b2ab99fc3be5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\24b66b1625cba589bca64faa7b91e256bfd8025c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c3529d9491be892952749d252ae1defa9b1f937">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_81a4e644454972343c1be968631b6093de0583d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f2e811c8f260eb316ee0b4a50801039c0ee48191\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ef7ae67db896c98500f3ccd3e6a5503006b04429.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\24b66b1625cba589bca64faa7b91e256bfd8025c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c3529d9491be892952749d252ae1defa9b1f937">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_81a4e644454972343c1be968631b6093de0583d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\c75d086dbf93f1f46bc0d8f1c0fd2654ded4bdbb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="31c1fe8583cbb7f6a9f11bb7010a747e79712335">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_6c7bb5e61a2863c0d35b676cb45386b99c95c5b5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\1d137abb1f10eebfc4df56c2b8d906ba3c84f7ed\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a82d11b9e0bae2cb3fda4424f88f58c5aef0bbc7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\1e7e874b38bd85a7366071e8a224eea8ff48ba1c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_c52f583e27b9d115f9e734c1a5ab7b41deaee499.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_a4b5000a8f18d26c4dabc2e54b0725b34373ba9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\ab0a20c92f9fb6fc3d2398eae27062a5707f9c12\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_70d6aa4ba70c0e5e5e939483877b39b3ec75c512.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\27838f1ce39c80ce6d851f83dac138702fdd8454\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e8378278093b08f44ae2cb550c95dac39e0c9b89\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\448786324a37d5dce0b8b0c58e0a5dbdbabf2299\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="84c98924eff3106f306c3e233cc2e6d84744f518">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_715301813e4d1b1dd62bc57fee4b9ca8c2d9c3fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\27838f1ce39c80ce6d851f83dac138702fdd8454\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_e8378278093b08f44ae2cb550c95dac39e0c9b89.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\14869d6f204a1536d22b7d5b7176d4b9f2de1413\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_61ed816f4442b3cf4a918c916a8eaa566ab83209\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\1ce57a9ee878848f427b132fc0acb85e5018f893\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cdef0a9bb7a5c21bf63a6f4c9c161a3e659e7a4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_a4b5000a8f18d26c4dabc2e54b0725b34373ba9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\okio-1.9.0_1a5e31a563bc1ac6038e236c08d1220e0fda6768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\013d323a905ec89243f69d85723f6f18b0d1a10d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_95a8358535680abfb4f974c32e9803092523f450.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\4da62bd0523bb5f183fe7ac4618855f48620a76e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_aeef17f7aaac5afe4692121fa160ffee677f68ec.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\8bff0ff3313d5dde054dd24b0d889423e7a40908\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5642076dbabfedfee939511f02a9c7ff54da7f9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\8bff0ff3313d5dde054dd24b0d889423e7a40908\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_5642076dbabfedfee939511f02a9c7ff54da7f9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\retrofit-2.0.2_f102c29dd81190ee70e5a083a0900c894fa335a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f2e811c8f260eb316ee0b4a50801039c0ee48191\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_ef7ae67db896c98500f3ccd3e6a5503006b04429.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.2_f102c29dd81190ee70e5a083a0900c894fa335a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\f7ad475fe8bbfc543c742d06e9139754abb48e62\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f910ce4152cf5b205ee2630dc2e12d2803e1e63">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_9af7935760bcc1c9698f25c51f41db8fbaae7850.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\13d8e20104ecd76da1fd1593b62e8ffd1b8b2b00\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -1143,15 +1656,6 @@
         revision="25.0.2"
         sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_cdef0a9bb7a5c21bf63a6f4c9c161a3e659e7a4e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\4b65ba1c8bfd62e673d0a963e2969f3626598c62\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e0891a69f24747a6988698a57fd55825b31251fa">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_dee65a36b0d25a309cec970297de4042e1b51986.jar" />
     </item>
     <item
         is-multidex="false"
@@ -1181,22 +1685,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_39406fe5305989ca584e66e8194ab2723fadface.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\1.1.6\2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5\parceler-api-1.1.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\parceler-api-1.1.6_35a1bbdde53e4769365e3a989f1ace74923bfcaa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f6b48145a1dbdfcfe88bdb6b74b80843bd53eb17\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\448786324a37d5dce0b8b0c58e0a5dbdbabf2299\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_b7b4679afaefc0b3cea4d4d33f3a9aee1d8ed51c.jar" />
+        sha1="84c98924eff3106f306c3e233cc2e6d84744f518">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_715301813e4d1b1dd62bc57fee4b9ca8c2d9c3fc\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -1215,24 +1710,6 @@
         revision="25.0.1"
         sha1="44a694d4095be84c2888764b1f7256b385c030ad">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_cefd0c13abe1dc09277624ca6a42272931896d37.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\prog\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_672a66eb1091679d8aceafed47ced071bc4a51de.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\674b88973f695980f19b16b5b577bd17f7c0cce5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e4c4c6db6020ed19f773bfe4e6d45662a1780489">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_809fe5e81ecacb101a8668b2330422479a22978e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -1263,24 +1740,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\d41584b218b95ebd99bb413eeb8dfee94832dc7a\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="1828dd75d357690efb2c5f4326804e2f7ad21f6c">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_1ecc7b2f9eef19074df6e7fc39138ef1c6d2cc7a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\49b88d59c725141b30efdb864556d045517ad52a\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_4851fd8f185cfe7e50d4c5ae6323ed622ad28e74.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\ab0a20c92f9fb6fc3d2398eae27062a5707f9c12\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -1289,13 +1748,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_70d6aa4ba70c0e5e5e939483877b39b3ec75c512.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\ab0a20c92f9fb6fc3d2398eae27062a5707f9c12\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\gson-2.6.1_46fe48c0e76052ac24591cc95c5777d30889ed3a.jar" />
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_70d6aa4ba70c0e5e5e939483877b39b3ec75c512\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -1308,33 +1767,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\cdb177e041639599e5e08e020dacf5e6d0ed022f\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_546c397685de5c594029906664f8f8930aadaea6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\f6b48145a1dbdfcfe88bdb6b74b80843bd53eb17\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_b7b4679afaefc0b3cea4d4d33f3a9aee1d8ed51c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\7fa6d20cbd4358e4ea034bc5a1745dbc54baab26\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_bd64b47cd18d04444c9ae2e63f57093529279733.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
         jumboMode="true"
         optimize="true"
@@ -1343,13 +1775,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\retrofit-2.0.2_f102c29dd81190ee70e5a083a0900c894fa335a0.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\4b65ba1c8bfd62e673d0a963e2969f3626598c62\output\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\1b612bf6a97eae949e7f8bd3b3eda87b67900490\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.1"
-        sha1="e0891a69f24747a6988698a57fd55825b31251fa">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_dee65a36b0d25a309cec970297de4042e1b51986.jar" />
+        revision="25.0.3"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_691e1ed81fae1b5ed74838df7da93b388f4a5862\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -1361,6 +1793,15 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_cefd0c13abe1dc09277624ca6a42272931896d37.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\2442fc032b0b1ff9f9ebedb56728ade01b2fecb3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9da0a4e2c1e3d2612ae2a7aab08e44af422fabc3\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\a6cf8ae980abaec04d9c1d0f3e95f09c8d66df5e\output\jars\classes.jar"
         jumboMode="true"
@@ -1368,15 +1809,6 @@
         revision="25.0.2"
         sha1="d3f8ab57967a9149262ad36a46477fc2515f6ac8">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_bf9d7c66349a794d3049e895b382e1b199f0141b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\06583228eebdf3742ed7cc3d826d16a0890768de\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_54c848bd73ab2f84f86d75ff00058969249b6e73.jar" />
     </item>
     <item
         is-multidex="false"
@@ -1397,49 +1829,13 @@
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_a4b5000a8f18d26c4dabc2e54b0725b34373ba9f.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        is-multidex="true"
+        jar="C:\Users\Ahmed Badr\.android\build-cache\1e7e874b38bd85a7366071e8a224eea8ff48ba1c\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_8124dbe366d935f74ed856f616b6f996d6b7476f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\209a0c6e85c331ca14792b8d8f7d3b6f77c6a6b2\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_51a789532881482475f72aaae124db11679f982b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\49b88d59c725141b30efdb864556d045517ad52a\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_4851fd8f185cfe7e50d4c5ae6323ed622ad28e74.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\b34c07060e4c55168fd04abd21118aa8511bfd23\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1d8a3cef611578892f5e00a85dc8520062fbe005">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_9dc039a2392d96a4d8494d9f0217df9a2f581c37.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\gson-2.6.1_46fe48c0e76052ac24591cc95c5777d30889ed3a.jar" />
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c52f583e27b9d115f9e734c1a5ab7b41deaee499\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -1461,30 +1857,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\glide-3.6.1_fbcc57a08f4fafa8852a7d379ab3af9f5f2e769a.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Ahmed Badr\.android\build-cache\ab0a20c92f9fb6fc3d2398eae27062a5707f9c12\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
         <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_70d6aa4ba70c0e5e5e939483877b39b3ec75c512.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Ahmed Badr\.android\build-cache\5585db88d60b51f2fde406df66e14211299c35e9\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
-        <dex dex="D:\Android\Apps\NaVIGATION\app\build\intermediates\pre-dexed\debug\classes_27d4995dcc1f2712306603ed925652414a5ef970.jar" />
     </item>
 
 </items>
