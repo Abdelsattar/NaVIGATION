@@ -27,4 +27,8 @@ public class ServiceBuilder {
     public ServiceInterfaces.Details details(){
         return retrofit.create(ServiceInterfaces.Details.class);
     }
+
+    public ServiceInterfaces.TextSearch textSearch(){
+        return retrofit.create(ServiceInterfaces.TextSearch.class);
+    }
 }

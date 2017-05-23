@@ -88,7 +88,7 @@
                 android:layout_toEndOf="@+id/add_business_warnning"
                 android:layout_toRightOf="@+id/add_business_warnning"
                 android:clickable="true"
-                android:textSize="6.2pt"
+                android:textSize="7.5pt"
                 android:text="@string/add_business"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/colorAccent"
@@ -117,7 +117,7 @@
         android:layout_marginLeft="4dp"
         android:visibility="gone"
         ads:adSize="280x50"
-        ads:adUnitId="@string/ad_mob_banner_id" />
+        ads:adUnitId="@string/ad_mob_real_banner_id" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -127,7 +127,7 @@
         android:layout_marginBottom="12dp"
         android:layout_marginRight="30dp"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ad_mob_banner_id" />
+        ads:adUnitId="@string/ad_mob_real_banner_id" />
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu_yellow"

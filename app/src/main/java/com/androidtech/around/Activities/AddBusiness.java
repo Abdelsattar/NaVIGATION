@@ -562,53 +562,27 @@ public class AddBusiness extends AppCompatActivity implements
      * add left drawables to edit texts
      */
     private void addLeftDrawable() {
-        //full name drawable
-        Drawable drawable = new IconicsDrawable(this)
-                .icon(GoogleMaterial.Icon.gmd_assignment_ind)
-                .color(getResources().getColor(R.color.editProfile_icon))
-                .sizeDp(20);
-        mBusinessTitle.setCompoundDrawables(drawable, null, null, null );
 
-
-        //phone drawable
-        drawable = new IconicsDrawable(this)
-                .icon(GoogleMaterial.Icon.gmd_phone)
-                .color(getResources().getColor(R.color.editProfile_icon))
-                .sizeDp(20);
-        mBusinessPhone.setCompoundDrawables(drawable, null, null, null );
-
-        //email drawable
-        drawable = new IconicsDrawable(this)
-                .icon(GoogleMaterial.Icon.gmd_email)
-                .color(getResources().getColor(R.color.editProfile_icon))
-                .sizeDp(20);
-        mBusinessEmail.setCompoundDrawables(drawable, null, null, null );
+//        mBusinessTitle.setCompoundDrawables(getDrawable(R.drawable.ic_assignment_black_24dp), null, null, null );
+//
+//        mBusinessPhone.setCompoundDrawables(getDrawable(R.drawable.ic_settings_phone_black_24dp), null, null, null );
+//
+//        mBusinessEmail.setCompoundDrawables(getDrawable(R.drawable.ic_mail_black_24dp), null, null, null );
 
         //change menu item save changes icon
-        doneDrawable = new IconicsDrawable(this)
-                .icon(GoogleMaterial.Icon.gmd_done)
-                .color(getResources().getColor(R.color.editProfileAccent))
-                .sizeDp(20);
+        doneDrawable = getDrawable(R.drawable.ic_done_black_24dp);
 
         //change menu item reload icon
-        updateDrawable = new IconicsDrawable(this)
-                .icon(GoogleMaterial.Icon.gmd_update)
-                .color(getResources().getColor(R.color.editProfileAccent))
-                .sizeDp(20);
+        updateDrawable = getDrawable(R.drawable.ic_edit_black_24dp);
 
         //add location drawable
         updateDrawable = new IconicsDrawable(this)
                 .icon(GoogleMaterial.Icon.gmd_location_on)
                 .color(getResources().getColor(R.color.editProfile_icon))
                 .sizeDp(20);
-        mAddLocation.setCompoundDrawables(updateDrawable, null, null, null );
+        mAddLocation.setCompoundDrawables(getDrawable(R.drawable.ic_edit_black_24dp), null, null, null );
 
-        //add clear location
-        updateDrawable = new IconicsDrawable(this)
-                .icon(GoogleMaterial.Icon.gmd_clear)
-                .color(getResources().getColor(R.color.editProfile_icon))
-                .sizeDp(14);
-        mClearLocation.setBackground(updateDrawable);
+        mClearLocation.setBackground(getDrawable(R.drawable.ic_edit_black_24dp));
     }
 
     /**
@@ -621,7 +595,7 @@ public class AddBusiness extends AppCompatActivity implements
                 .icon(GoogleMaterial.Icon.gmd_clear)
                 .color(getResources().getColor(R.color.white))
                 .sizeDp(16);
-        getSupportActionBar().setHomeAsUpIndicator(clear);
+        getSupportActionBar().setHomeAsUpIndicator(getDrawable(R.drawable.ic_clear_black_24dp));
     }
 
     @Override
@@ -630,7 +604,7 @@ public class AddBusiness extends AppCompatActivity implements
         getMenuInflater().inflate(R.menu.edit_profile_menu, menu);
         mSaveItem = menu.getItem(0);
 
-        mSaveItem.setIcon(doneDrawable);
+        mSaveItem.setIcon(getDrawable(R.drawable.ic_done_black_24dp));
 
         updateUI();
         return true;

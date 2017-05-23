@@ -32,4 +32,14 @@ public interface ServiceInterfaces {
         );
     }
 
+    interface TextSearch {
+        @GET("/maps/api/place/textsearch/json")
+        Call<PlacesRespose> textSearch(
+                @Query("query") String query,
+                @Query("location") String location,
+                @Query("radius") String radius,
+                @Query("key") String API_KEY
+        );
+    }
+
 }

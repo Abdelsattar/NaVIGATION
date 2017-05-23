@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">NAVIGUER.DZ</string>
-    <string name="title_activity_main">Main</string>
+    <string name="title_activity_main">Principale</string>
     <string name="title_activity_edit_profile">Mon profil</string>
     <string name="search_hint">Chercher...</string>
-    <string name="own_business">Ajouter activités / lancer messagerie?</string>
+    <string name="own_business">Ajouter activités ou Announces?</string>
     <string name="sign_up">S\'inscrire</string>
     <string name="change_image">Changer la photo</string>
     <string name="name">Nom complet</string>
@@ -43,15 +43,15 @@
     <string name="phone_short">Numéro de téléphone invalide</string>
     <string name="profile_created">Profil créé</string>
     <string name="error_occurred_password">Une erreur s\'est produite ,Vérifiez votre mot de passe.</string>
-    <string name="title_activity_add_business">Ajouter activité</string>
+    <string name="title_activity_add_business">Ajouter activité/Announce </string>
     <string name="choose_image">Ajouter une image commerciale</string>
     <string name="business_title">Nom/Description</string>
     <string name="add_location">Précisez l\'emplacement de votre activité</string>
-    <string name="about_me">Information/Prix</string>
+    <string name="about_me">Informations/Prix</string>
     <string name="category">Catégorie</string>
     <string name="copy_right">Copyrights © %1$d</string>
     <string name="sub_category">Spécialité</string>
-    <string name="business_added">Votre activité/entreprise est désormais à la disposition du monde…</string>
+    <string name="business_added">Votre activité/entreprise/Announce est désormais à la disposition du monde…</string>
     <string name="business_about_empty">A votre disposition..</string>
     <string name="verify_email_first">Vérifiez votre email d\'abord</string>
     <string name="ok">Ok</string>
@@ -62,9 +62,9 @@
     <string name="location_permission_granted">Emplacement: Permission accordée</string>
     <string name="action_log_out">Se déconnecter</string>
     <string name="log_out_action">Etes-vous sûr de vous déconnecter?</string>
-    <string name="success_add_place">Votre entreprise sur la carte</string>
+    <string name="success_add_place">Votre activité est sur la carte</string>
     <string name="extra_business_id">identificateur d\'activité</string>
-    <string name="business_header">Mon entreprise/Activite</string>
+    <string name="business_header">Mon Activite/Annonce</string>
     <string name="about_us">Naviguer.dz est une application qui vous permet non seulement de localiser vos lieux utiles (ex: médecins / pharmaciens / cliniques/ commerces / entreprises / agences / Taxi, etc ...), mais aussi de faire la promotion et la publicité de vos activités professionnelles.
             Pour vous commentaires veuillez écrire à : affak.development@gmail.com</string>
     <string name="contact_mail">affak.development@gmail.com</string>
@@ -77,16 +77,16 @@
     <string name="title_bg_screen">NAVIGUER.DZ</string>
     <string name="title_bg_screen1">NAVIGUER.DZ</string>
     <string name="title_bg_screen2">NAVIGUER.DZ</string>
-    <string name="description_bg_screen">App collaborative où les professionnels se font connaître aux utilisateurs gratuitement. NAVIGUER.DZ permet aussi une messagerie directe entre  professionnels.</string>
+    <string name="description_bg_screen">App collaborative où les professionnels se font connaître aux utilisateurs,et où vous pouvez poster vos annonces gratuitement. NAVIGUER.DZ permet aussi une messagerie directe.</string>
     <string name="description_bg_screen1">Vous voulez savoir où se trouvent la pharmacie, le medecin,le commerce, le taxi,l\'entreprise,etc..les plus proches?</string>
-    <string name="description_bg_screen2">Vous voulez faire connaitre d\'avantage vos activites professionnelles et commerciales?</string>
+    <string name="description_bg_screen2">Vous voulez faire connaitre d\'avantage vos activites professionnelles et commerciales,et aussi poster vos annonces?</string>
     <string name="map_not_ready">Carte non prête</string>
     <string name="no_places">Aucun lieu trouvé</string>
     <string name="title_search_filter">Filtre</string>
     <string name="search">Chercher</string>
     <string name="search_title">Filtrer ma carte</string>
     <string name="title_activity_marker_details">Markeur Details d\'Activité</string>
-    <string name="error_phone">Aucun téléphone fourni pour l\'entreprise</string>
+    <string name="error_phone">Aucun téléphone fourni...</string>
     <string name="title_about_us">Information/Prix</string>
     <string name="inbox">Messages reçus</string>
     <string name="title_activity_inbox">Boîte de réception</string>
@@ -106,10 +106,10 @@
     <string name="offline">Hors ligne</string>
     <string name="write_message">Écrire un message...</string>
     <string name="login_first">Connectez-vous d\'abord</string>
-    <string name="location_current">Localisation</string>
+    <string name="location_current">Votre Position</string>
     <string name="filter">Filtre activités</string>
     <string name="myplaces">Mes lieux</string>
-    <string name="phone_error">Voulez vous ajouter votre propre activité?</string>
+    <string name="phone_error">Voulez vous ajouter votre propre activité/announce?</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBoNomMFZovBlV8-V2LQgR7MyD4TNtFCJI</string>
     <string name="error_mail">Email non fourni</string>
     <string name="about">A propos</string>
@@ -118,8 +118,8 @@
     <string name="delete">yes</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
-    <string name="add_Bussines">Ajouteractivité/announce</string>
-    <string name="add_business">Ajouteractivité/announce</string>
+    <string name="add_Bussines">Ajouter</string>
+    <string name="add_business">Ajouter</string>
     <string name="add_business_warnning">Ajouter un nouvel activité/announce?</string>
 
     <string name="ad_mob_banner_id">ca-app-pub-3940256099942544/6300978111</string>

@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private InterstitialAd mInterstitialAd;
     private boolean mustShowAdd = false;
     Handler mHandler = new Handler();
-    int adsTimer = 40000;
+    int adsTimer = 60000;
     boolean isGoogleCategory = false;
     Bundle savedInstanceState;
     //endregion
@@ -259,40 +259,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public void onMenuToggle(boolean opened) {
                 String text;
                 if (opened) {
-                    if (mCurrentUser == null) {
-                        if (isGoogleCategory) {
-                            mAddFab.setLabelText(getString(R.string.sign_in));
-                            mAddFab.setVisibility(View.GONE);
-                            filter.setVisibility(View.GONE);
-                            inbox.setVisibility(View.GONE);
-                            mAddPlaceLayout.setVisibility(View.GONE);
-                            mPlacesHereFab.setVisibility(View.VISIBLE);
-                        } else {
-                            mAddFab.setVisibility(View.VISIBLE);
-                            mAddFab.setLabelText(getString(R.string.sign_in));
-                            inbox.setVisibility(View.GONE);
-                            filter.setVisibility(View.VISIBLE);
-                            mAddPlaceLayout.setVisibility(View.GONE);
-                            mPlacesHereFab.setVisibility(View.GONE);
-                        }
-                    } else {
-                        if (isGoogleCategory) {
-                            mAddFab.setLabelText(getString(R.string.sign_in));
-                            mAddFab.setVisibility(View.GONE);
-                            filter.setVisibility(View.GONE);
-                            inbox.setVisibility(View.GONE);
-                            mAddPlaceLayout.setVisibility(View.GONE);
-                            mPlacesHereFab.setVisibility(View.VISIBLE);
-                        } else {
-                            mAddFab.setVisibility(View.VISIBLE);
-                            mAddFab.setLabelText(getString(R.string.title_activity_add_business));
-                            inbox.setVisibility(View.VISIBLE);
-                            filter.setVisibility(View.VISIBLE);
-                            mAddPlaceLayout.setVisibility(View.VISIBLE);
-                            mPlacesHereFab.setVisibility(View.GONE);
-                        }
-                    }
-
+                    adjustFabs();
                 }
             }
         });
@@ -383,6 +350,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public void onSearchAction(String currentQuery) {
                 if (!isGoogleCategory) {
                     searchMapByTitle(currentQuery);
+                }else {
+                    if (mCurrentLocation!=null) {
+                        mMap.clear();
+                        PerformGetTextSearchPlaces(currentQuery, String.valueOf(mCurrentLocation.getLatitude()), String.valueOf(mCurrentLocation.getLongitude()), true);
+                    }
                 }
             }
         });
@@ -417,6 +389,42 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 showChooseCategoryDilog(false);
             }
         });
+    }
+
+    public void adjustFabs(){
+        if (mCurrentUser == null) {
+            if (isGoogleCategory) {
+                mAddFab.setLabelText(getString(R.string.sign_in));
+                mAddFab.setVisibility(View.GONE);
+                filter.setVisibility(View.GONE);
+                inbox.setVisibility(View.GONE);
+                mAddPlaceLayout.setVisibility(View.GONE);
+                mPlacesHereFab.setVisibility(View.VISIBLE);
+            } else {
+                mAddFab.setVisibility(View.VISIBLE);
+                mAddFab.setLabelText(getString(R.string.sign_in));
+                inbox.setVisibility(View.GONE);
+                filter.setVisibility(View.VISIBLE);
+                mAddPlaceLayout.setVisibility(View.GONE);
+                mPlacesHereFab.setVisibility(View.GONE);
+            }
+        } else {
+            if (isGoogleCategory) {
+                mAddFab.setLabelText(getString(R.string.sign_in));
+                mAddFab.setVisibility(View.GONE);
+                filter.setVisibility(View.GONE);
+                inbox.setVisibility(View.GONE);
+                mAddPlaceLayout.setVisibility(View.GONE);
+                mPlacesHereFab.setVisibility(View.VISIBLE);
+            } else {
+                mAddFab.setVisibility(View.VISIBLE);
+                mAddFab.setLabelText(getString(R.string.title_activity_add_business));
+                inbox.setVisibility(View.VISIBLE);
+                filter.setVisibility(View.VISIBLE);
+                mAddPlaceLayout.setVisibility(View.VISIBLE);
+                mPlacesHereFab.setVisibility(View.GONE);
+            }
+        }
     }
 
     private void getPlacesHere() {
@@ -472,6 +480,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             mMap.clear();
                             isGoogleCategory = false;
                         }
+
+                        adjustFabs();
                         //add drawer
                         addDrawer();
 
@@ -511,7 +521,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     //region build google ads
     void initAdMob() {
-        MobileAds.initialize(getApplicationContext(), getResources().getString(R.string.ad_mob_init_id));
+        MobileAds.initialize(getApplicationContext(), getResources().getString(R.string.ad_mob_real_id));
         AdView mAdView = (AdView) findViewById(R.id.adView);
 //        NativeExpressAdView mAdView = (NativeExpressAdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -520,7 +530,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         // Create the InterstitialAd and set the adUnitId.
         mInterstitialAd = new InterstitialAd(this);
         // Defined in res/values/strings.xml
-        mInterstitialAd.setAdUnitId(getString(R.string.ad_mob_full_screen_id));
+        mInterstitialAd.setAdUnitId(getString(R.string.ad_mob_real_full_screen_id));
 
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
@@ -951,6 +961,71 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         target = new PicassoMarker(mMap.addMarker(markerOne), this);
         Picasso.with(MainActivity.this).load(icon).into(target);
+    }
+
+    public void PerformGetTextSearchPlaces(String query, String lat, String lng, final boolean fromMenue) {
+        //"restaurants"
+        mProgressDialog.show();
+        ServiceBuilder builder = new ServiceBuilder();
+        ServiceInterfaces.TextSearch textSearch = builder.textSearch();
+        if (mCurrentLocation != null) {
+            Call<PlacesRespose> apiModelCall = textSearch.textSearch(query, lat + "," + lng, "10000", Constants.SERVER_KEY);
+            apiModelCall.enqueue(new Callback<PlacesRespose>() {
+                @Override
+                public void onResponse(Call<PlacesRespose> call, Response<PlacesRespose> response) {
+                    int code = response.code();
+                    if (response.body()!=null){
+                        resultArrayList = response.body().results;
+                    }
+                    if (response.body().getResults().size() == 0) {
+                        if (mProgressDialog.isShowing())
+                            mProgressDialog.dismiss();
+                        moveCameraToGooglePlaces(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()));
+                        showSnackbar(R.string.no_places);
+                        return;
+                    }
+                    Log.e("Response", new Gson().toJson(response.body()));
+                    for (int i = 0; i < response.body().getResults().size(); i++) {
+                        PerformGetDetails(response.body().getResults().get(i).getPlaceId());
+                        LatLng latLng = new LatLng(response.body().getResults().get(i).getGeometry().getLocation().getLat(),
+                                response.body().getResults().get(i).getGeometry().getLocation().getLng());
+                        String key = response.body().getResults().get(i).getGeometry().getLocation().getLat() + "," +
+                                response.body().getResults().get(i).getGeometry().getLocation().getLng();
+                        mGooglePlaceList.put(key,response.body().getResults().get(i));
+                        addPlacesMarker(response.body().getResults().get(i).getIcon(), latLng);
+                        if (fromMenue) {
+                            moveCameraToGooglePlaces(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()));
+                        }
+//                    Log.e("currentLocation name ", response.body().getResults().get(i).getName());
+//                    Log.e("currentLocation ratin ", String.valueOf(response.body().getResults().get(i).getRating()));
+                        if (response.body().getResults().get(i).getPhotos() != null && response.body().getResults().get(i).getPhotos().size() > 0) {
+                            for (int j = 0; j < response.body().getResults().get(i).getPhotos().size(); j++) {
+//                            Log.e("currentLocation photo ", response.body().getResults().get(i).getPhotos().get(j).getPhotoReference());
+                            }
+                        }
+                    }
+
+                    //reset map camera
+                    //resetMapCamera();
+                    if (fromMenue) {
+                        if (mCurrentLocation != null) {
+                            LatLng mlatLng = new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude());
+                            moveCameraToGooglePlaces(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()));
+                        }
+                    }
+                    if (mProgressDialog.isShowing())
+                        mProgressDialog.dismiss();
+                }
+
+                @Override
+                public void onFailure(Call<PlacesRespose> call, Throwable t) {
+                    if (mProgressDialog.isShowing())
+                        mProgressDialog.dismiss();
+                    showSnackbar(R.string.error_occurred);
+                }
+            });
+        }
+
     }
 
     public void PerformGetPlaces(String categoryName, final String Icon, String lat, String lng, final boolean fromMenue) {
@@ -1456,7 +1531,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 .putExtra("extra_place", googlePlaceDetails));
                     }
                 }
-
             }
         });
 
